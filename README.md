@@ -4,7 +4,7 @@
 - 🌱 I’m currently learning Javascript. 
 - 🤔 I’m looking for help with full stack web development.
 - 💬 Ask me about any tech related stuff.
-- 📫 How to reach me: [Instagram- @shaarif_alam](https://www.instagram.com/shaarif_alam/) | [Twitter- @shaarifalam](https://twitter.com/shaarifalam)
+- 📫 How to reach me: [Instagram- @3nxzy](https://www.instagram.com/3nxzy/) | [Twitter- @shaarifalam](https://twitter.com/shaarifalam)
 - 😄 Pronouns: He/His
 - ⚡ Give my repos a star, to make me a Star.
 

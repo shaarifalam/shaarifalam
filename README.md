@@ -4,7 +4,7 @@
 - 🌱 I’m currently learning Javascript. 
 - 🤔 I’m looking for help with full stack web development.
 - 💬 Talk to me about any tech related stuff.
-- 📫 How to reach me: [Instagram- @3nxzy](mailto:alamshaarif@gmail.com)
+- 📫 How to reach me: [Drop a Mail](mailto:alamshaarif@gmail.com)
 - 😄 Pronouns: He/His
 - ⚡ Give my repos a star, to make me a Star.
 

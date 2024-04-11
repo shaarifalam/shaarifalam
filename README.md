@@ -1,10 +1,11 @@
 ### Hey, I'm Shaarif! 👋
 
-- 🔭 I’m working on web development projects.
+- 🔭 I’m working on Designing & Development projects.
+- 👽 Wanna know more about me? [Head over to my website](https://shaarifalam.netlify.app/)
 - 🌱 I’m currently learning DevOps. 
-- 🤔 I’m looking for help with full stack web development.
+- 🤔 I’m looking for help with UI/UX Design.
 - 💬 Talk to me about any tech related stuff.
-- 📫 How to reach me: [Drop an Email](mailto:alamshaarif@gmail.com)
-- 😄 Available for Interactions between 19:00-04:00 IST.
-- ⚡ Give my repos a star, to make me a Star.
-<img src="https://github-readme-stats.vercel.app/api?username=shaarifalam&&show_icons=true&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=151515">
+- 📫 [Drop an Email](mailto:alamshaarif@gmail.com) to get in touch!
+- 😄 Feel free to reach out to me any time. I prefer to talk over email, </br> especially since we may be a few time zones away..
+
+<img src="https://github-readme-stats.vercel.app/api?username=shaarifalam&&show_icons=true&title_color=ffffff&icon_color=ffff&text_color=daf7dc&bg_color=151515">

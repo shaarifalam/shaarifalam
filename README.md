@@ -1,9 +1,9 @@
 ### Hey, I'm Shaarif! 👋
 
-- 🔭 I’m working on Designing & Development projects.
+- 🔭 Working on Designing & Development projects.
 - 👽 Wanna know more about me? [Head over to my website](https://shaarifalam.netlify.app/)
-- 🌱 I’m currently learning DevOps. 
-- 🤔 I’m looking for help with UI/UX Design.
+- 🌱 Currently learning Large Language Model. 
+- 🤔 I’m looking for help with Automation.
 - 💬 Talk to me about any tech related stuff.
 - 📫 [Drop an Email](mailto:alamshaarif@gmail.com) to get in touch!
 - 😄 Feel free to reach out to me any time. I prefer to talk over email, </br> especially since we may be a few time zones away..

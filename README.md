@@ -4,157 +4,132 @@
 
 ### UI/UX Designer • Frontend Developer • IoT Software Designer
 
-Building enterprise software, vehicle tracking platforms, and digital products with a focus on usability, scalability, and clean design.
-
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Designing+Meaningful+Experiences;Frontend+Developer;UI%2FUX+Designer;Building+Enterprise+Applications;Creating+Scalable+Design+Systems"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=UI%2FUX+Designer;Frontend+Developer;Design+Systems;Enterprise+Software;IoT+%7C+Vehicle+Tracking"/>
 
 </div>
 
 ---
 
-# 👨‍💻 About Me
+<table>
+<tr>
+<td width="42%" valign="top">
+
+<html><code><span class="ascii" style="color: white; background: black;
+display:inline-block;
+white-space:pre;
+letter-spacing:0;
+line-height:1.4;
+font-family:'Consolas','BitstreamVeraSansMono','CourierNew',Courier,monospace;
+font-size:12px;
+
+border-width:1px;
+border-style:solid;
+border-color:lightgray;
+"><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>&</span><span>&</span><span>&</span><span>%</span><span>&</span><span>%</span><span>%</span><span>&</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span><span>#</span><span>%</span><span>#</span><span>#</span><span>%</span><span>#</span><span>(</span><span>#</span><span>*</span><span>.</span><span>,</span><span>*</span><span>/</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span><span>%</span><span>(</span><span>,</span><span>,</span><span>,</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span>.</span><span>.</span><span>.</span><span>,</span><span>*</span><span>*</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>#</span><span>(</span><span>*</span><span>,</span><span>,</span><span>*</span><span>,</span><span> </span><span> </span><span>,</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>.</span><span>.</span><span>.</span><span>,</span><span>/</span><span>,</span><span>.</span><span>(</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>#</span><span>*</span><span>,</span><span>,</span><span>,</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span>,</span><span>.</span><span> </span><span> </span><span> </span><span>.</span><span> </span><span> </span><span>.</span><span> </span><span>.</span><span> </span><span> </span><span> </span><span>.</span><span>/</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span><span>%</span><span>#</span><span>*</span><span>,</span><span>,</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span>,</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>/</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span><span>%</span><span>*</span><span>,</span><span>.</span><span>.</span><span>.</span><span> </span><span>.</span><span> </span><span> </span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>(</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>&</span><span>%</span><span>%</span><span>%</span><span>%</span><span>(</span><span>,</span><span>.</span><span>/</span><span>,</span><span>,</span><span>/</span><span>(</span><span>/</span><span>,</span><span>.</span><span> </span><span>.</span><span>*</span><span>,</span><span>.</span><span> </span><span>.</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span><span>%</span><span>(</span><span>.</span><span>#</span><span>(</span><span>,</span><span>/</span><span>*</span><span>*</span><span>/</span><span>(</span><span>/</span><span>*</span><span>.</span><span>.</span><span>.</span><span>,</span><span>,</span><span>*</span><span>,</span><span> </span><span> </span><span> </span><span> </span><span> </span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>(</span><span>#</span><span>#</span><span>(</span><span>(</span><span>/</span><span>/</span><span>(</span><span>#</span><span>(</span><span>,</span><span>,</span><span>,</span><span>/</span><span>*</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span> </span><span> </span><span>/</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>(</span><span>#</span><span>%</span><span>%</span><span>%</span><span>%</span><span>#</span><span>#</span><span>%</span><span>#</span><span>(</span><span>/</span><span>/</span><span>(</span><span>(</span><span>(</span><span>(</span><span>(</span><span>*</span><span>,</span><span>.</span><span>,</span><span>*</span><span>(</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>(</span><span>#</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>(</span><span>(</span><span>(</span><span>*</span><span>.</span><span>*</span><span>(</span><span>(</span><span>(</span><span>(</span><span>/</span><span>*</span><span>,</span><span>.</span><span>,</span><span>/</span><span>#</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>/</span><span>(</span><span>#</span><span>#</span><span>/</span><span>(</span><span>(</span><span>(</span><span>/</span><span>/</span><span>/</span><span>*</span><span>*</span><span>,</span><span>*</span><span>*</span><span>,</span><span>,</span><span>.</span><span>,</span><span>#</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>(</span><span>*</span><span>/</span><span>#</span><span>#</span><span>#</span><span>#</span><span>#</span><span>(</span><span>(</span><span>*</span><span>/</span><span>/</span><span>/</span><span>*</span><span>.</span><span> </span><span> </span><span> </span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>.</span><span>/</span><span>#</span><span>#</span><span>#</span><span>#</span><span>*</span><span>.</span><span>*</span><span>/</span><span>/</span><span>*</span><span>.</span><span> </span><span> </span><span> </span><span>,</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>*</span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>,</span><span>,</span><span>,</span><span>.</span><span> </span><span> </span><span>#</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>*</span><span>(</span><span>#</span><span>(</span><span>*</span><span>.</span><span>.</span><span>,</span><span>*</span><span>*</span><span>,</span><span>*</span><span>*</span><span>*</span><span>*</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span>/</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>.</span><span>.</span><span>#</span><span>#</span><span>#</span><span>#</span><span>#</span><span>(</span><span>(</span><span>/</span><span>(</span><span>/</span><span>*</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>.</span><span>,</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>&</span><span>&</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>/</span><span>*</span><span>,</span><span>,</span><span>,</span><span> </span><span>.</span><span>(</span><span>#</span><span>#</span><span>(</span><span>(</span><span>(</span><span>/</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>/</span><span>%</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>*</span><span>*</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span> </span><span>.</span><span>,</span><span>&</span><span>&</span><span>&</span><span>%</span><span>%</span><span>%</span>
+<span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>*</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span> </span><span> </span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>%</span><span>%</span><span>%</span><span>%</span>
+<span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>,</span><span>,</span><span>,</span><span>.</span><span>.</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>.</span><span>,</span><span>,</span><span>,</span><span>,</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span> </span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span>%</span><span>%</span><span>%</span>
+<span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>,</span><span>,</span><span>.</span><span>,</span><span>.</span><span>.</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>%</span><span>%</span>
+<span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>,</span><span>,</span><span>.</span><span>.</span><span>,</span><span>.</span><span>.</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>.</span><span>.</span><span>.</span><span>,</span><span>,</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>,</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>/</span><span>%</span>
+<span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>.</span><span>.</span><span> </span><span>.</span><span>.</span><span>.</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>.</span><span>,</span><span>,</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span>.</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span> </span><span>#</span>
+<span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>%</span><span>#</span><span>.</span><span>.</span><span> </span><span> </span><span>,</span><span>,</span><span>.</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>.</span><span> </span><span>.</span>
+</span></code></html>
+
+</td>
+
+<td width="58%" valign="top">
 
 ```text
-Name        : Sheikh Shaarif
-Role        : UI/UX Designer & Frontend Developer
-Location    : India
-Experience  : UI/UX + Development
-Industry    : IoT • Fleet Management • Enterprise Software
+shaarif@github
+────────────────────────────────────────────
 
-Current Focus
--------------
-✓ Enterprise Dashboard Design
-✓ Design Systems
-✓ React + TypeScript
-✓ Tailwind CSS
-✓ Vehicle Tracking Software
-✓ Telematics Platforms
-✓ Product Strategy
+OS              : Windows 11
+Editor          : VS Code
+Role            : UI/UX Designer
+Industry        : IoT & Telematics
+Focus           : Enterprise Applications
+
+Languages       : HTML • CSS • JavaScript
+Frameworks      : React • TypeScript
+Styling         : Tailwind CSS
+Design          : Figma • Photoshop
+3D              : Blender • SolidWorks
+
+Current Work
+------------
+• Vehicle Tracking Systems
+• Fleet Management Dashboards
+• Design Systems
+• UI Engineering
+• Documentation
 
 Learning
 --------
-• Advanced Frontend Architecture
 • Three.js
 • Motion Design
 • AI Assisted Development
 
-Mission
--------
-Design software that people actually enjoy using.
+Philosophy
+----------
+"Great products begin with great user experience."
 ```
 
----
-
-# ⚡ Tech Stack
-
-### Design
-
-![Figma](https://img.shields.io/badge/Figma-black?style=for-the-badge&logo=figma)
-![Photoshop](https://img.shields.io/badge/Photoshop-001E36?style=for-the-badge&logo=AdobePhotoshop)
-![Illustrator](https://img.shields.io/badge/Illustrator-330000?style=for-the-badge&logo=AdobeIllustrator)
-![After Effects](https://img.shields.io/badge/AfterEffects-9999FF?style=for-the-badge&logo=AdobeAfterEffects)
+</td>
+</tr>
+</table>
 
 ---
 
-### Development
+## Tech Stack
 
-![React](https://img.shields.io/badge/React-black?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript)
-![JavaScript](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-black?style=for-the-badge&logo=tailwindcss)
-![NodeJS](https://img.shields.io/badge/NodeJS-black?style=for-the-badge&logo=node.js)
-![Git](https://img.shields.io/badge/Git-black?style=for-the-badge&logo=git)
+<p align="center">
+<img src="https://skillicons.dev/icons?i=figma,react,ts,js,tailwind,html,css,nodejs,git,github,vscode,blender"/>
+</p>
 
 ---
 
-### Tools
-
-Figma • VS Code • GitHub • Postman • Blender • SolidWorks • Jira • Notion
-
----
-
-# 🚀 Projects
-
-### Vehicle Tracking System
-
-Enterprise fleet management software featuring:
-
-• Live GPS Tracking
-
-• Route Playback
-
-• Alerts
-
-• Geofencing
-
-• Analytics
-
-• Design System
-
----
-
-### IoT Dashboard
-
-Real-time monitoring dashboard for
-
-• GPS Locks
-
-• Sensors
-
-• Battery Monitoring
-
-• Telemetry
-
-• Device Management
-
----
-
-### Design Systems
-
-Building scalable component libraries and design tokens for enterprise products.
-
----
-
-# 📊 GitHub Analytics
+## GitHub Stats
 
 <p align="center">
 
-<img width="48%" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight"/>
 
-<img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight"/>
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight"/>
 
 </p>
 
 <p align="center">
 
-<img width="75%" src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=tokyo-night"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=tokyo-night"/>
 
 </p>
 
 ---
 
-# 🌍 Connect
+## Connect
 
-LinkedIn
+- LinkedIn
+- Portfolio
+- Email
 
-Portfolio
-
-Email
-
----
-
-# 💭 Philosophy
-
-> Great software isn't built by writing more code.
-
-> It's built by understanding users first.
-
----
-
-<div align="center">
-
-### Thanks for visiting.
-
-⭐ Star a repository if you find something useful.
-
-</div>
+> Replace **YOUR_GITHUB_USERNAME** with your GitHub username.

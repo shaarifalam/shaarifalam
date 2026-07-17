@@ -94,31 +94,34 @@ const generatedAt = new Intl.DateTimeFormat('en', {
   timeZone: 'UTC'
 }).format(new Date());
 
-const statsText = `${user.login}@github
-──────────────────────────────
-OS        : GitHub README
-Role      : UI/UX Designer
-Frontend  : React • TypeScript
-Design    : Figma • Design Systems
-Focus     : IoT • Fleet • GPS
+const statsText = `shaarif@alam -----------------------------------------
+OS............................. Web, Mobile, IoT, Linux
+Uptime................................. 22+ years
+Host.......................... UI/UX Designer, Frontend
+Kernel.................... IoT Software Designer
+IDE............................ Figma, VS Code, Blender
 
-GitHub Stats
-Repos     : ${formatNumber(user.repositories.totalCount)}
-Stars     : ${formatNumber(totals.stars)}
-Forks     : ${formatNumber(totals.forks)}
-Followers : ${formatNumber(user.followers.totalCount)}
-Following : ${formatNumber(user.following.totalCount)}
-Year      : ${formatNumber(user.contributionsCollection.contributionCalendar.totalContributions)}
-Commits   : ${formatNumber(user.contributionsCollection.totalCommitContributions)}
-PRs       : ${formatNumber(user.contributionsCollection.totalPullRequestContributions)}
-Issues    : ${formatNumber(user.contributionsCollection.totalIssueContributions)}
-Reviews   : ${formatNumber(user.contributionsCollection.totalPullRequestReviewContributions)}
+Languages.Programming........ ${topLanguages}
+Languages.Computer........... HTML, CSS, React, Node.js
+Languages.Real............... English, Hindi, Urdu
 
-Top Langs : ${topLanguages}
-Updated   : ${generatedAt} UTC
+Hobbies.Software............. Dashboards, Design Systems
+Hobbies.Hardware............. GPS, Fleet, IoT Devices
 
 Contact
-GitHub    : github.com/${user.login}`;
+Email.Personal............... shaarifalam@gmail.com
+GitHub....................... github.com/${user.login}
+LinkedIn..................... linkedin.com/in/shaarifalam
+
+GitHub Stats
+Repos........................ ${formatNumber(user.repositories.totalCount)}
+Contributions................ ${formatNumber(user.contributionsCollection.contributionCalendar.totalContributions)}
+Stars........................ ${formatNumber(totals.stars)}
+Followers.................... ${formatNumber(user.followers.totalCount)}
+Forks........................ ${formatNumber(totals.forks)}
+Commits...................... ${formatNumber(user.contributionsCollection.totalCommitContributions)}
+PRs.......................... ${formatNumber(user.contributionsCollection.totalPullRequestContributions)}
+Updated...................... ${generatedAt} UTC`;
 
 const statsBlock = `<pre>\n${escapeXml(statsText)}\n</pre>`;
 

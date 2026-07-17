@@ -1,13 +1,9 @@
-<h1 align="center">Sheikh Shaarif</h1>
-
----
-
-<h3 align="center">UI/UX Designer • Frontend Developer • IoT Software Designer</h3>
+`shaarifalam / README.md`
 
 <table>
   <tr>
-    <td width="64%" valign="top">
-      <pre>
+    <td width="45%" valign="top">
+<pre>
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%
 &&&&&&&&&&&&&&&&&&&&&&&&&&%%&&&%&%%&%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%
@@ -36,27 +32,35 @@
 %%%%%%%%%%,,..,..,,,,,,,...,,.....,................  ...     .      /%
 %%%%%%%%%%.. ...,,,,,,.,,........................... ..            . #
 %%%%%%%%%#..  ,,.,,,,,.................................           .. .
-      </pre>
+</pre>
     </td>
-    <td width="36%" valign="top">
+    <td width="55%" valign="top">
 <!-- GITHUB-STATS:START -->
 <pre>
-shaarifalam@github
-──────────────────────────────
-OS        : GitHub README
-Role      : UI/UX Designer
-Frontend  : React • TypeScript
-Design    : Figma • Design Systems
-Focus     : IoT • Fleet • GPS
+shaarif@alam -----------------------------------------
+OS............................. Web, Mobile, IoT, Linux
+Uptime................................. 22+ years
+Host.......................... UI/UX Designer, Frontend
+Kernel.................... IoT Software Designer
+IDE............................ Figma, VS Code, Blender
 
-GitHub Stats
-Repos     : Run npm run update-stats
-Stars     : Waiting for first update
-Forks     : Waiting for first update
-Followers : Waiting for first update
+Languages.Programming........ JavaScript, TypeScript
+Languages.Computer........... HTML, CSS, React, Node.js
+Languages.Real............... English, Hindi, Urdu
+
+Hobbies.Software............. Dashboards, Design Systems
+Hobbies.Hardware............. GPS, Fleet, IoT Devices
 
 Contact
-GitHub    : github.com/shaarifalam
+Email.Personal............... shaarifalam@gmail.com
+GitHub....................... github.com/shaarifalam
+LinkedIn..................... linkedin.com/in/shaarifalam
+
+GitHub Stats
+Repos........................ Run npm run update-stats
+Contributions................ Waiting for first update
+Stars........................ Waiting for first update
+Followers.................... Waiting for first update
 </pre>
 <!-- GITHUB-STATS:END -->
     </td>

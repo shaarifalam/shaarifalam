@@ -89,7 +89,7 @@
       <text x="430" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
       <text x="544" y="78" fill="#7d8590">-----------------------------------------------</text>
       <text x="430" y="101" fill="#f0a45d">OS</text><text x="443.4" y="101" fill="#30363d">..............................</text><text x="650" y="101" fill="#79c0ff">Web, Mobile, Embedded, Linux</text>
-      <text x="430" y="115" fill="#f0a45d">Uptime</text><text x="470.2" y="115" fill="#30363d">..........................</text><text x="650" y="115" fill="#79c0ff">25y 0mo 14d 20h 46m 43s</text>
+      <text x="430" y="115" fill="#f0a45d">Uptime</text><text x="470.2" y="115" fill="#30363d">..........................</text><text x="650" y="115" fill="#79c0ff">25y 0mo 14d 20h 52m 21s</text>
       <text x="430" y="129" fill="#f0a45d">Host</text><text x="456.8" y="129" fill="#30363d">............................</text><text x="650" y="129" fill="#79c0ff">UI/UX Designer, Frontend</text>
       <text x="430" y="143" fill="#f0a45d">Kernel</text><text x="470.2" y="143" fill="#30363d">..........................</text><text x="650" y="143" fill="#79c0ff">IoT Software Designer</text>
       <text x="430" y="157" fill="#f0a45d">IDE</text><text x="450.1" y="157" fill="#30363d">.............................</text><text x="650" y="157" fill="#79c0ff">Figma, VS Code</text>
@@ -102,7 +102,7 @@
       <text x="430" y="263" fill="#f0a45d">Data.Storage</text><text x="510.4" y="263" fill="#30363d">....................</text><text x="650" y="263" fill="#c9d1d9">MySQL • PostgreSQL • Firebase</text>
       <text x="430" y="277" fill="#f0a45d">Protocols</text><text x="490.3" y="277" fill="#30363d">.......................</text><text x="650" y="277" fill="#c9d1d9">MQTT • REST API • WebSocket</text>
       <text x="430" y="291" fill="#f0a45d">Industry.Focus</text><text x="523.8" y="291" fill="#30363d">..................</text><text x="650" y="291" fill="#c9d1d9" textLength="255" lengthAdjust="spacingAndGlyphs">Fleet Management • Telematics • Asset Tracking</text>
-      <text x="430" y="305" fill="#f0a45d">Current.Mission</text><text x="530.5" y="305" fill="#30363d">.................</text><text x="650" y="305" fill="#7ee787">Building intelligent IoT experiences 🚀</text>
+      <text x="430" y="305" fill="#f0a45d">Current.Mission</text><text x="530.5" y="305" fill="#30363d">.................</text><text x="650" y="305" fill="#7ee787">Building intelligent IoT experiences</text>
       <text x="430" y="327" fill="#c9d1d9" font-weight="700">Contact</text>
       <text x="430" y="340" fill="#f0a45d">Email.Personal</text><text x="523.8" y="340" fill="#30363d">..................</text><text x="650" y="340" fill="#79c0ff">shaarifalam@gmail.com</text>
       <text x="430" y="354" fill="#f0a45d">GitHub</text><text x="470.2" y="354" fill="#30363d">..........................</text><text x="650" y="354" fill="#79c0ff">github.com/shaarifalam</text>
@@ -111,10 +111,10 @@
       <text x="430" y="404" fill="#c9d1d9" font-weight="700">GitHub Stats</text>
       <text x="430" y="417" fill="#f0a45d">Repos</text><text x="463.5" y="417" fill="#30363d">...........................</text><text x="650" y="417" fill="#7ee787">11</text>
       <text x="430" y="431" fill="#f0a45d">Stars</text><text x="463.5" y="431" fill="#30363d">...........................</text><text x="650" y="431" fill="#c9d1d9">9</text>
-      <text x="430" y="445" fill="#f0a45d">Commits</text><text x="476.9" y="445" fill="#30363d">.........................</text><text x="650" y="445" fill="#79c0ff">63</text>
+      <text x="430" y="445" fill="#f0a45d">Commits</text><text x="476.9" y="445" fill="#30363d">.........................</text><text x="650" y="445" fill="#79c0ff">64</text>
       <text x="430" y="459" fill="#f0a45d">Followers</text><text x="490.3" y="459" fill="#30363d">.......................</text><text x="650" y="459" fill="#c9d1d9">17</text>
       <text x="430" y="473" fill="#f0a45d">Contributions</text><text x="517.1" y="473" fill="#30363d">...................</text><text x="650" y="473" fill="#79c0ff">0</text>
-      <text x="430" y="487" fill="#f0a45d">Updated</text><text x="476.9" y="487" fill="#30363d">.........................</text><text x="650" y="487" fill="#7ee787">Jul 17, 2026, 8:46 PM</text>
+      <text x="430" y="487" fill="#f0a45d">Updated</text><text x="476.9" y="487" fill="#30363d">.........................</text><text x="650" y="487" fill="#7ee787">Jul 17, 2026, 8:52 PM</text>
     </g>
   </g>
 </svg>

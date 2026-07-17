@@ -342,7 +342,7 @@ function createProfileCardSvg({ user, totals, generatedAt, uptime, asciiLines })
     ['Data.Storage', 'MySQL • PostgreSQL • Firebase', 'body'],
     ['Protocols', 'MQTT • REST API • WebSocket', 'body'],
     ['Industry.Focus', 'Fleet Management • Telematics • Asset Tracking', 'body'],
-    ['Current.Mission', 'Building intelligent IoT experiences 🚀', 'green'],
+    ['Current.Mission', 'Building intelligent IoT experiences', 'green'],
     null,
     ['Contact', '', 'heading'],
     ['Email.Personal', 'shaarifalam@gmail.com', 'blue'],
@@ -364,12 +364,12 @@ function createProfileCardSvg({ user, totals, generatedAt, uptime, asciiLines })
   <text x="18" y="27" fill="#7d8590" font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="11">shaarifalam / README.md</text>
   <rect x="18" y="47" width="924" height="465" rx="6" fill="#111820" stroke="#30363d"/>
   <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace">
-    <g font-size="1.95" font-weight="700" fill="#c9d1d9" transform="matrix(1.68 0 0 1 -28.56 0)">
+    <g font-size="1.95" font-weight="700" fill="#c9d1d9" transform="matrix(1.9 0 0 1 -37.8 0)">
       ${asciiLines.map((line, index) => `<text x="42" y="${76 + index * 5.2}" xml:space="preserve">${escapeXml(line)}</text>`).join('\n      ')}
     </g>
     <g font-size="11.2">
-      <text x="386" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
-      <text x="500" y="78" fill="#7d8590">------------------------------------------------------</text>
+      <text x="430" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
+      <text x="544" y="78" fill="#7d8590">-----------------------------------------------</text>
       ${renderInfoRows(rows)}
     </g>
   </g>
@@ -379,9 +379,9 @@ function createProfileCardSvg({ user, totals, generatedAt, uptime, asciiLines })
 
 function renderInfoRows(rows) {
   let y = 101;
-  const labelX = 386;
-  const valueX = 575;
-  const valueMaxWidth = 275;
+  const labelX = 430;
+  const valueX = 650;
+  const valueMaxWidth = 255;
   const charWidth = 6.7;
 
   return rows

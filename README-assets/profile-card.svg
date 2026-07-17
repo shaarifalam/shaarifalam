@@ -3,7 +3,7 @@
   <text x="18" y="27" fill="#7d8590" font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="11">shaarifalam / README.md</text>
   <rect x="18" y="47" width="924" height="465" rx="6" fill="#111820" stroke="#30363d"/>
   <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace">
-    <g font-size="1.95" font-weight="700" fill="#c9d1d9" transform="matrix(1.68 0 0 1 -28.56 0)">
+    <g font-size="1.95" font-weight="700" fill="#c9d1d9" transform="matrix(1.9 0 0 1 -37.8 0)">
       <text x="42" y="76" xml:space="preserve">######################################################################################################################################################%%##******</text>
       <text x="42" y="81.2" xml:space="preserve">#####################################################################################################################################################%%%##******</text>
       <text x="42" y="86.4" xml:space="preserve">#####################################################################################################################################################%%%##******</text>
@@ -86,35 +86,35 @@
       <text x="42" y="486.8" xml:space="preserve">*********************-. ....   .............................................................................................     .        .:::..      ....  ::=+</text>
     </g>
     <g font-size="11.2">
-      <text x="386" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
-      <text x="500" y="78" fill="#7d8590">------------------------------------------------------</text>
-      <text x="386" y="101" fill="#f0a45d">OS</text><text x="399.4" y="101" fill="#30363d">..........................</text><text x="575" y="101" fill="#79c0ff">Web, Mobile, Embedded, Linux</text>
-      <text x="386" y="115" fill="#f0a45d">Uptime</text><text x="426.2" y="115" fill="#30363d">......................</text><text x="575" y="115" fill="#79c0ff">25y 0mo 14d 20h 43m 40s</text>
-      <text x="386" y="129" fill="#f0a45d">Host</text><text x="412.8" y="129" fill="#30363d">........................</text><text x="575" y="129" fill="#79c0ff">UI/UX Designer, Frontend</text>
-      <text x="386" y="143" fill="#f0a45d">Kernel</text><text x="426.2" y="143" fill="#30363d">......................</text><text x="575" y="143" fill="#79c0ff">IoT Software Designer</text>
-      <text x="386" y="157" fill="#f0a45d">IDE</text><text x="406.1" y="157" fill="#30363d">.........................</text><text x="575" y="157" fill="#79c0ff">Figma, VS Code</text>
-      <text x="386" y="179" fill="#f0a45d">Embedded.Systems</text><text x="493.2" y="179" fill="#30363d">............</text><text x="575" y="179" fill="#c9d1d9">GPS • GSM • BLE • RFID • IoT Sensors</text>
-      <text x="386" y="193" fill="#f0a45d">Mechanical.CAD</text><text x="479.8" y="193" fill="#30363d">..............</text><text x="575" y="193" fill="#c9d1d9">SolidWorks • Blender</text>
-      <text x="386" y="207" fill="#f0a45d">Frontend.Stack</text><text x="479.8" y="207" fill="#30363d">..............</text><text x="575" y="207" fill="#c9d1d9">React • TypeScript • Tailwind CSS</text>
-      <text x="386" y="221" fill="#f0a45d">Design.Systems</text><text x="479.8" y="221" fill="#30363d">..............</text><text x="575" y="221" fill="#c9d1d9">Figma • UI/UX • Component Libraries</text>
-      <text x="386" y="235" fill="#f0a45d">Mapping.Tech</text><text x="466.4" y="235" fill="#30363d">................</text><text x="575" y="235" fill="#c9d1d9">Google Maps • Mapbox • GIS</text>
-      <text x="386" y="249" fill="#f0a45d">Cloud.Services</text><text x="479.8" y="249" fill="#30363d">..............</text><text x="575" y="249" fill="#c9d1d9">GitHub • Vercel • Firebase</text>
-      <text x="386" y="263" fill="#f0a45d">Data.Storage</text><text x="466.4" y="263" fill="#30363d">................</text><text x="575" y="263" fill="#c9d1d9">MySQL • PostgreSQL • Firebase</text>
-      <text x="386" y="277" fill="#f0a45d">Protocols</text><text x="446.3" y="277" fill="#30363d">...................</text><text x="575" y="277" fill="#c9d1d9">MQTT • REST API • WebSocket</text>
-      <text x="386" y="291" fill="#f0a45d">Industry.Focus</text><text x="479.8" y="291" fill="#30363d">..............</text><text x="575" y="291" fill="#c9d1d9" textLength="275" lengthAdjust="spacingAndGlyphs">Fleet Management • Telematics • Asset Tracking</text>
-      <text x="386" y="305" fill="#f0a45d">Current.Mission</text><text x="486.5" y="305" fill="#30363d">.............</text><text x="575" y="305" fill="#7ee787">Building intelligent IoT experiences 🚀</text>
-      <text x="386" y="327" fill="#c9d1d9" font-weight="700">Contact</text>
-      <text x="386" y="340" fill="#f0a45d">Email.Personal</text><text x="479.8" y="340" fill="#30363d">..............</text><text x="575" y="340" fill="#79c0ff">shaarifalam@gmail.com</text>
-      <text x="386" y="354" fill="#f0a45d">GitHub</text><text x="426.2" y="354" fill="#30363d">......................</text><text x="575" y="354" fill="#79c0ff">github.com/shaarifalam</text>
-      <text x="386" y="368" fill="#f0a45d">LinkedIn</text><text x="439.6" y="368" fill="#30363d">....................</text><text x="575" y="368" fill="#79c0ff">linkedin.com/in/shaarifalam</text>
-      <text x="386" y="382" fill="#f0a45d">Discord</text><text x="432.9" y="382" fill="#30363d">.....................</text><text x="575" y="382" fill="#79c0ff">shaarifalam</text>
-      <text x="386" y="404" fill="#c9d1d9" font-weight="700">GitHub Stats</text>
-      <text x="386" y="417" fill="#f0a45d">Repos</text><text x="419.5" y="417" fill="#30363d">.......................</text><text x="575" y="417" fill="#7ee787">11</text>
-      <text x="386" y="431" fill="#f0a45d">Stars</text><text x="419.5" y="431" fill="#30363d">.......................</text><text x="575" y="431" fill="#c9d1d9">9</text>
-      <text x="386" y="445" fill="#f0a45d">Commits</text><text x="432.9" y="445" fill="#30363d">.....................</text><text x="575" y="445" fill="#79c0ff">62</text>
-      <text x="386" y="459" fill="#f0a45d">Followers</text><text x="446.3" y="459" fill="#30363d">...................</text><text x="575" y="459" fill="#c9d1d9">17</text>
-      <text x="386" y="473" fill="#f0a45d">Contributions</text><text x="473.1" y="473" fill="#30363d">...............</text><text x="575" y="473" fill="#79c0ff">0</text>
-      <text x="386" y="487" fill="#f0a45d">Updated</text><text x="432.9" y="487" fill="#30363d">.....................</text><text x="575" y="487" fill="#7ee787">Jul 17, 2026, 8:43 PM</text>
+      <text x="430" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
+      <text x="544" y="78" fill="#7d8590">-----------------------------------------------</text>
+      <text x="430" y="101" fill="#f0a45d">OS</text><text x="443.4" y="101" fill="#30363d">..............................</text><text x="650" y="101" fill="#79c0ff">Web, Mobile, Embedded, Linux</text>
+      <text x="430" y="115" fill="#f0a45d">Uptime</text><text x="470.2" y="115" fill="#30363d">..........................</text><text x="650" y="115" fill="#79c0ff">25y 0mo 14d 20h 46m 43s</text>
+      <text x="430" y="129" fill="#f0a45d">Host</text><text x="456.8" y="129" fill="#30363d">............................</text><text x="650" y="129" fill="#79c0ff">UI/UX Designer, Frontend</text>
+      <text x="430" y="143" fill="#f0a45d">Kernel</text><text x="470.2" y="143" fill="#30363d">..........................</text><text x="650" y="143" fill="#79c0ff">IoT Software Designer</text>
+      <text x="430" y="157" fill="#f0a45d">IDE</text><text x="450.1" y="157" fill="#30363d">.............................</text><text x="650" y="157" fill="#79c0ff">Figma, VS Code</text>
+      <text x="430" y="179" fill="#f0a45d">Embedded.Systems</text><text x="537.2" y="179" fill="#30363d">................</text><text x="650" y="179" fill="#c9d1d9">GPS • GSM • BLE • RFID • IoT Sensors</text>
+      <text x="430" y="193" fill="#f0a45d">Mechanical.CAD</text><text x="523.8" y="193" fill="#30363d">..................</text><text x="650" y="193" fill="#c9d1d9">SolidWorks • Blender</text>
+      <text x="430" y="207" fill="#f0a45d">Frontend.Stack</text><text x="523.8" y="207" fill="#30363d">..................</text><text x="650" y="207" fill="#c9d1d9">React • TypeScript • Tailwind CSS</text>
+      <text x="430" y="221" fill="#f0a45d">Design.Systems</text><text x="523.8" y="221" fill="#30363d">..................</text><text x="650" y="221" fill="#c9d1d9">Figma • UI/UX • Component Libraries</text>
+      <text x="430" y="235" fill="#f0a45d">Mapping.Tech</text><text x="510.4" y="235" fill="#30363d">....................</text><text x="650" y="235" fill="#c9d1d9">Google Maps • Mapbox • GIS</text>
+      <text x="430" y="249" fill="#f0a45d">Cloud.Services</text><text x="523.8" y="249" fill="#30363d">..................</text><text x="650" y="249" fill="#c9d1d9">GitHub • Vercel • Firebase</text>
+      <text x="430" y="263" fill="#f0a45d">Data.Storage</text><text x="510.4" y="263" fill="#30363d">....................</text><text x="650" y="263" fill="#c9d1d9">MySQL • PostgreSQL • Firebase</text>
+      <text x="430" y="277" fill="#f0a45d">Protocols</text><text x="490.3" y="277" fill="#30363d">.......................</text><text x="650" y="277" fill="#c9d1d9">MQTT • REST API • WebSocket</text>
+      <text x="430" y="291" fill="#f0a45d">Industry.Focus</text><text x="523.8" y="291" fill="#30363d">..................</text><text x="650" y="291" fill="#c9d1d9" textLength="255" lengthAdjust="spacingAndGlyphs">Fleet Management • Telematics • Asset Tracking</text>
+      <text x="430" y="305" fill="#f0a45d">Current.Mission</text><text x="530.5" y="305" fill="#30363d">.................</text><text x="650" y="305" fill="#7ee787">Building intelligent IoT experiences 🚀</text>
+      <text x="430" y="327" fill="#c9d1d9" font-weight="700">Contact</text>
+      <text x="430" y="340" fill="#f0a45d">Email.Personal</text><text x="523.8" y="340" fill="#30363d">..................</text><text x="650" y="340" fill="#79c0ff">shaarifalam@gmail.com</text>
+      <text x="430" y="354" fill="#f0a45d">GitHub</text><text x="470.2" y="354" fill="#30363d">..........................</text><text x="650" y="354" fill="#79c0ff">github.com/shaarifalam</text>
+      <text x="430" y="368" fill="#f0a45d">LinkedIn</text><text x="483.6" y="368" fill="#30363d">........................</text><text x="650" y="368" fill="#79c0ff">linkedin.com/in/shaarifalam</text>
+      <text x="430" y="382" fill="#f0a45d">Discord</text><text x="476.9" y="382" fill="#30363d">.........................</text><text x="650" y="382" fill="#79c0ff">shaarifalam</text>
+      <text x="430" y="404" fill="#c9d1d9" font-weight="700">GitHub Stats</text>
+      <text x="430" y="417" fill="#f0a45d">Repos</text><text x="463.5" y="417" fill="#30363d">...........................</text><text x="650" y="417" fill="#7ee787">11</text>
+      <text x="430" y="431" fill="#f0a45d">Stars</text><text x="463.5" y="431" fill="#30363d">...........................</text><text x="650" y="431" fill="#c9d1d9">9</text>
+      <text x="430" y="445" fill="#f0a45d">Commits</text><text x="476.9" y="445" fill="#30363d">.........................</text><text x="650" y="445" fill="#79c0ff">63</text>
+      <text x="430" y="459" fill="#f0a45d">Followers</text><text x="490.3" y="459" fill="#30363d">.......................</text><text x="650" y="459" fill="#c9d1d9">17</text>
+      <text x="430" y="473" fill="#f0a45d">Contributions</text><text x="517.1" y="473" fill="#30363d">...................</text><text x="650" y="473" fill="#79c0ff">0</text>
+      <text x="430" y="487" fill="#f0a45d">Updated</text><text x="476.9" y="487" fill="#30363d">.........................</text><text x="650" y="487" fill="#7ee787">Jul 17, 2026, 8:46 PM</text>
     </g>
   </g>
 </svg>

@@ -197,7 +197,7 @@ function createProfileCardSvg({ user, totals, generatedAt, asciiLines }) {
   <text x="18" y="27" fill="#7d8590" font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="11">shaarifalam / README.md</text>
   <rect x="18" y="47" width="924" height="465" rx="6" fill="#111820" stroke="#30363d"/>
   <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace">
-    <g font-size="1.95" font-weight="700" fill="#c9d1d9">
+    <g font-size="1.95" font-weight="700" fill="#c9d1d9" transform="matrix(1.68 0 0 1 -28.56 0)">
       ${asciiLines.map((line, index) => `<text x="42" y="${76 + index * 5.2}" xml:space="preserve">${escapeXml(line)}</text>`).join('\n      ')}
     </g>
     <g font-size="9.2">

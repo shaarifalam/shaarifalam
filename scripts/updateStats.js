@@ -54,13 +54,11 @@ const query = `
   }
 `;
 
-if (!token && !usePlaceholder) {
-  console.error('Missing GITHUB_TOKEN or GH_TOKEN.');
-  console.error('Run `npm run update-stats -- --placeholder` to render a local placeholder card.');
-  process.exit(1);
-}
-
-const user = usePlaceholder ? createPlaceholderUser(username) : await fetchProfileStats(username);
+const user = usePlaceholder
+  ? createPlaceholderUser(username)
+  : token
+    ? await fetchProfileStats(username)
+    : await fetchPublicProfileStats(username);
 const totals = user.repositories.nodes.reduce(
   (acc, repo) => {
     acc.stars += repo.stargazerCount;
@@ -109,6 +107,84 @@ async function fetchProfileStats(login) {
 
   user.repositories.nodes = repos;
   return user;
+}
+
+async function fetchPublicProfileStats(login) {
+  const profile = await fetchRest(`https://api.github.com/users/${encodeURIComponent(login)}`);
+  const repos = await fetchPublicRepos(login);
+  const commitCount = await fetchPublicCommitCount(login);
+
+  return {
+    login: profile.login,
+    followers: { totalCount: profile.followers },
+    following: { totalCount: profile.following },
+    repositories: {
+      totalCount: profile.public_repos,
+      nodes: repos
+    },
+    contributionsCollection: {
+      totalCommitContributions: commitCount,
+      contributionCalendar: {
+        totalContributions: 0
+      }
+    }
+  };
+}
+
+async function fetchPublicCommitCount(login) {
+  try {
+    const payload = await fetchRest(
+      `https://api.github.com/search/commits?q=author:${encodeURIComponent(login)}`,
+      { accept: 'application/vnd.github.cloak-preview+json' }
+    );
+
+    return payload.total_count || 0;
+  } catch {
+    return 0;
+  }
+}
+
+async function fetchPublicRepos(login) {
+  const repos = [];
+  let page = 1;
+
+  while (true) {
+    const pageRepos = await fetchRest(
+      `https://api.github.com/users/${encodeURIComponent(login)}/repos?per_page=100&type=owner&sort=updated&page=${page}`
+    );
+
+    repos.push(
+      ...pageRepos
+        .filter((repo) => !repo.fork)
+        .map((repo) => ({
+          name: repo.name,
+          stargazerCount: repo.stargazers_count,
+          forkCount: repo.forks_count,
+          primaryLanguage: repo.language ? { name: repo.language } : null
+        }))
+    );
+
+    if (pageRepos.length < 100) {
+      return repos;
+    }
+
+    page += 1;
+  }
+}
+
+async function fetchRest(url, options = {}) {
+  const response = await fetch(url, {
+    headers: {
+      Accept: options.accept || 'application/vnd.github+json',
+      'User-Agent': `${username}-profile-stats`
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`GitHub REST request failed: ${response.status} ${response.statusText}`);
+  }
+
+  return response.json();
 }
 
 async function fetchGraphQL(graphqlQuery, variables) {
@@ -200,7 +276,7 @@ function createProfileCardSvg({ user, totals, generatedAt, asciiLines }) {
     <g font-size="1.95" font-weight="700" fill="#c9d1d9" transform="matrix(1.68 0 0 1 -28.56 0)">
       ${asciiLines.map((line, index) => `<text x="42" y="${76 + index * 5.2}" xml:space="preserve">${escapeXml(line)}</text>`).join('\n      ')}
     </g>
-    <g font-size="9.2">
+    <g font-size="11.2">
       <text x="386" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
       <text x="500" y="78" fill="#7d8590">------------------------------------------------------</text>
       ${renderInfoRows(rows)}
@@ -215,7 +291,7 @@ function renderInfoRows(rows) {
   const labelX = 386;
   const valueX = 575;
   const valueMaxWidth = 275;
-  const charWidth = 5.55;
+  const charWidth = 6.7;
 
   return rows
     .map((row) => {
@@ -241,7 +317,7 @@ function renderInfoRows(rows) {
           ? ` textLength="${valueMaxWidth}" lengthAdjust="spacingAndGlyphs"`
           : '';
       const line = `<text x="${labelX}" y="${y}" fill="#f0a45d">${escapeXml(label)}</text><text x="${labelX + labelWidth}" y="${y}" fill="#30363d">${'.'.repeat(dotCount)}</text><text x="${valueX}" y="${y}" fill="${valueColor}"${fitAttrs}>${escapeXml(value)}</text>`;
-      y += 12.9;
+      y += 14;
       return line;
     })
     .filter(Boolean)

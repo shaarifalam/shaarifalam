@@ -1,0 +1,13 @@
+<svg width="960" height="120" viewBox="0 0 960 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sheikh Shaarif profile header">
+  <rect width="960" height="120" rx="12" fill="#0F172A"/>
+  <path d="M0 82C92 42 154 42 250 78C352 116 438 112 536 68C650 16 746 18 960 66V120H0V82Z" fill="#0EA5E9" fill-opacity="0.28"/>
+  <path d="M0 94C142 52 230 58 328 88C430 120 526 104 628 58C722 16 820 28 960 76V120H0V94Z" fill="#10B981" fill-opacity="0.32"/>
+  <text x="42" y="56" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Sheikh Shaarif</text>
+  <text x="42" y="86" fill="#BAE6FD" font-family="Inter, Arial, sans-serif" font-size="16">UI/UX Designer • Frontend Developer • IoT Software Designer</text>
+  <circle cx="886" cy="38" r="6" fill="#38BDF8">
+    <animate attributeName="opacity" values="0.35;1;0.35" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="914" cy="62" r="6" fill="#34D399">
+    <animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

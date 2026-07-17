@@ -123,9 +123,11 @@ Commits...................... ${formatNumber(user.contributionsCollection.totalC
 PRs.......................... ${formatNumber(user.contributionsCollection.totalPullRequestContributions)}
 Updated...................... ${generatedAt} UTC`;
 
-const statsBlock = `<pre>\n${escapeXml(statsText)}\n</pre>`;
-
-await updateReadme(statsBlock);
+await writeFile(
+  path.join(root, 'assets', 'profile-card.svg'),
+  createProfileCardSvg({ user, totals, topLanguages, generatedAt }),
+  'utf8'
+);
 await writeFile(
   path.join(root, 'assets', 'terminal.svg'),
   createTerminalSvg({ user, totals, topLanguages, topRepos, generatedAt }),
@@ -236,6 +238,112 @@ function createTerminalSvg({ user, totals, topLanguages, topRepos, generatedAt }
       return `<text x="42" y="${y}" fill="${color}" font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="18">${escapeXml(line)}</text>`;
     })
     .join('\n  ')}
+</svg>
+`;
+}
+
+function createProfileCardSvg({ user, totals, topLanguages, generatedAt }) {
+  const asciiLines = [
+    '&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&&&&%%&&&%&%%&%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&&%%%#%##%#(#*.,*/%&&&&&&&&&&&&&&&&&&&&&&&&&&&%%',
+    '&&&&&&&&&&&&&&&&&&&&&%%%%(,,,......  ...,**%&&&&&&&&&&&&&&&&&&&&&&&&%%',
+    '&&&&&&&&&&&&&&&&&&&%%#(*,,*,  ,.    ....,/,.(%&&&&&&&&&&&&&&&&&&&&&&%%',
+    '&&&&&&&&&&&&&&&%%%%%#*,,,.... ,.   .  . .   ./%&&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&%%%%#*,,.....  ,.    .        /%&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&%%%%*,... .  ...    .        (%&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&%&%%%%(,./,,/(/,. .*,. ..     .%&&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&&%%%%(.#(,/**/(/*...,,*,     %&&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&&&&&%%(##((//(#(,,,/*,,,,,  /&&&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&(#%%%%##%#(//(((((*,.,*(&&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&(#%%%%%(((*.*((((/*,.,/#&&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&%/(##/(((///**,**,,.,#%&&&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&%(*/#####((*///*.   %&&&&&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&&&%./####*.*//*.   ,&&&&&&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&&&&%%*...       .,,,.  #&&&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&&&&%*(#(*..,**,****.     /&&&&&&&&&&&&&&&&&&%%%',
+    '&&&&&&&&&&&&&&&&&&&&&&&&&%%..#####((/(/*           ..,%&&&&&&&&&&&&%%%',
+    '%%%%%%%%&&%&&&&&&&&&&%%/*,,, .(##(((/.                ...../%&&&&&&%%%',
+    '%%%%%%%%%%%%%%%%%%**,,,,,.                      ...........   .,&&&%%%',
+    '%%%%%%%%%%%%%%*,,,,,,,,,  ............ ....................      .%%%%',
+    '%%%%%%%%%%%%,,,..,,,,,,,,,,.,,,,..........................   .     %%%',
+    '%%%%%%%%%%%,,.,..,,,,,,,,,,,,,,,................... ....     .     .%%',
+    '%%%%%%%%%%,,..,..,,,,,,,...,,.....,................  ...     .      /%',
+    '%%%%%%%%%%.. ...,,,,,,.,,........................... ..            . #',
+    '%%%%%%%%%#..  ,,.,,,,,.................................           .. .'
+  ];
+
+  const rows = [
+    ['OS', 'Web, Mobile, IoT, Linux', 'blue'],
+    ['Uptime', '22+ years', 'blue'],
+    ['Host', 'UI/UX Designer, Frontend', 'blue'],
+    ['Kernel', 'IoT Software Designer', 'blue'],
+    ['IDE', 'Figma, VS Code, Blender', 'blue'],
+    null,
+    ['Languages.Programming', topLanguages, 'body'],
+    ['Languages.Computer', 'HTML, CSS, React, Node.js', 'body'],
+    ['Languages.Real', 'English, Hindi, Urdu', 'body'],
+    null,
+    ['Hobbies.Software', 'Dashboards, Design Systems', 'body'],
+    ['Hobbies.Hardware', 'GPS, Fleet, IoT Devices', 'body'],
+    null,
+    ['Contact', '', 'heading'],
+    ['Email.Personal', 'shaarifalam@gmail.com', 'blue'],
+    ['GitHub', `github.com/${user.login}`, 'blue'],
+    ['LinkedIn', 'linkedin.com/in/shaarifalam', 'blue'],
+    null,
+    ['GitHub Stats', '', 'heading'],
+    ['Repos', formatNumber(user.repositories.totalCount), 'green'],
+    ['Contributions', formatNumber(user.contributionsCollection.contributionCalendar.totalContributions), 'green'],
+    ['Stars', formatNumber(totals.stars), 'blue'],
+    ['Followers', formatNumber(user.followers.totalCount), 'red'],
+    ['Updated', `${generatedAt} UTC`, 'body']
+  ];
+
+  const rightX = 330;
+  const valueX = 570;
+  let y = 92;
+  const rightRows = rows
+    .map((row) => {
+      if (!row) {
+        y += 12;
+        return '';
+      }
+
+      const [label, value, type] = row;
+
+      if (type === 'heading') {
+        const heading = `<text x="${rightX}" y="${y}" fill="#c9d1d9" font-weight="700">${escapeXml(label)}</text>`;
+        y += 18;
+        return heading;
+      }
+
+      const valueColor = type === 'green' ? '#7ee787' : type === 'red' ? '#ff7b72' : type === 'blue' ? '#79c0ff' : '#c9d1d9';
+      const dotted = '.'.repeat(Math.max(3, 32 - label.length));
+      const line = `<text x="${rightX}" y="${y}" fill="#f0a45d">${escapeXml(label)}</text><text x="${rightX + label.length * 8}" y="${y}" fill="#30363d">${dotted}</text><text x="${valueX}" y="${y}" fill="${valueColor}">${escapeXml(value)}</text>`;
+      y += 16;
+      return line;
+    })
+    .filter(Boolean)
+    .join('\n    ');
+
+  const ascii = asciiLines
+    .map((line, index) => `<text x="28" y="${68 + index * 11}" xml:space="preserve">${escapeXml(line)}</text>`)
+    .join('\n    ');
+
+  return `<svg width="820" height="460" viewBox="0 0 820 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shaarif Alam README terminal profile">
+  <rect width="820" height="460" fill="#0d1117"/>
+  <text x="16" y="28" fill="#8b949e" font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="12">shaarifalam / README.md</text>
+  <rect x="16" y="44" width="788" height="396" rx="4" fill="#111820" stroke="#30363d"/>
+  <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="6.8" fill="#c9d1d9">
+    ${ascii}
+  </g>
+  <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="12">
+    <text x="${rightX}" y="68" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
+    <text x="424" y="68" fill="#8b949e">---------------------------------</text>
+    ${rightRows}
+  </g>
 </svg>
 `;
 }

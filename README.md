@@ -1,28 +1,12 @@
 <div align="center">
 
-<img src="https://github.com/YOUR_USERNAME.png" width="180" style="border-radius:50%" />
+# Sheikh Shaarif
 
-# Hi, I'm Shaarif 👋
+### UI/UX Designer • Frontend Developer • IoT Software Designer
 
-### UI/UX Designer • Frontend Developer • Product Designer
+Building enterprise software, vehicle tracking platforms, and digital products with a focus on usability, scalability, and clean design.
 
-Designing software that feels effortless.
-
-<p>
-
-<a href="https://linkedin.com/in/YOURPROFILE">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
-</a>
-
-<a href="mailto:YOURMAIL">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail"/>
-</a>
-
-<a href="https://YOURPORTFOLIO.com">
-<img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge"/>
-</a>
-
-</p>
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Designing+Meaningful+Experiences;Frontend+Developer;UI%2FUX+Designer;Building+Enterprise+Applications;Creating+Scalable+Design+Systems"/>
 
 </div>
 
@@ -30,169 +14,147 @@ Designing software that feels effortless.
 
 # 👨‍💻 About Me
 
-```yaml
-Name:        Shaarif
-Location:    India
-Role:        UI/UX Designer + Frontend Developer
+```text
+Name        : Sheikh Shaarif
+Role        : UI/UX Designer & Frontend Developer
+Location    : India
+Experience  : UI/UX + Development
+Industry    : IoT • Fleet Management • Enterprise Software
 
-Specialization:
-  - Enterprise SaaS
-  - Fleet Management
-  - Vehicle Tracking Systems
-  - Design Systems
-  - Dashboard UX
-  - Frontend Interfaces
+Current Focus
+-------------
+✓ Enterprise Dashboard Design
+✓ Design Systems
+✓ React + TypeScript
+✓ Tailwind CSS
+✓ Vehicle Tracking Software
+✓ Telematics Platforms
+✓ Product Strategy
 
-Currently Working On:
-  - Vehicle Tracking Platform
-  - React Dashboard
-  - Design System
-  - Component Library
+Learning
+--------
+• Advanced Frontend Architecture
+• Three.js
+• Motion Design
+• AI Assisted Development
 
-Learning:
-  - Three.js
-  - Motion Design
-  - SolidWorks
-  - Product Strategy
+Mission
+-------
+Design software that people actually enjoy using.
 ```
 
 ---
 
 # ⚡ Tech Stack
 
-## Design
+### Design
 
-![Figma](https://img.shields.io/badge/Figma-333333?style=for-the-badge&logo=figma)
-![Illustrator](https://img.shields.io/badge/Illustrator-333333?style=for-the-badge&logo=adobeillustrator)
-![Photoshop](https://img.shields.io/badge/Photoshop-333333?style=for-the-badge&logo=adobephotoshop)
-
----
-
-## Frontend
-
-![React](https://img.shields.io/badge/React-333333?style=for-the-badge&logo=react)
-
-![TypeScript](https://img.shields.io/badge/TypeScript-333333?style=for-the-badge&logo=typescript)
-
-![Tailwind](https://img.shields.io/badge/Tailwind-333333?style=for-the-badge&logo=tailwindcss)
-
-![NextJS](https://img.shields.io/badge/Next.js-333333?style=for-the-badge&logo=nextdotjs)
-
-![JavaScript](https://img.shields.io/badge/JavaScript-333333?style=for-the-badge&logo=javascript)
+![Figma](https://img.shields.io/badge/Figma-black?style=for-the-badge&logo=figma)
+![Photoshop](https://img.shields.io/badge/Photoshop-001E36?style=for-the-badge&logo=AdobePhotoshop)
+![Illustrator](https://img.shields.io/badge/Illustrator-330000?style=for-the-badge&logo=AdobeIllustrator)
+![After Effects](https://img.shields.io/badge/AfterEffects-9999FF?style=for-the-badge&logo=AdobeAfterEffects)
 
 ---
 
-## Tools
+### Development
 
-VS Code
+![React](https://img.shields.io/badge/React-black?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript)
+![JavaScript](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-black?style=for-the-badge&logo=tailwindcss)
+![NodeJS](https://img.shields.io/badge/NodeJS-black?style=for-the-badge&logo=node.js)
+![Git](https://img.shields.io/badge/Git-black?style=for-the-badge&logo=git)
 
-Git
+---
 
-GitHub
+### Tools
 
-Vercel
-
-Postman
-
-Three.js
-
-SolidWorks
+Figma • VS Code • GitHub • Postman • Blender • SolidWorks • Jira • Notion
 
 ---
 
 # 🚀 Projects
 
-### Vehicle Tracking Platform
+### Vehicle Tracking System
 
-Enterprise GPS tracking dashboard
+Enterprise fleet management software featuring:
 
-• Live Tracking
+• Live GPS Tracking
 
-• Route Replay
+• Route Playback
+
+• Alerts
 
 • Geofencing
 
-• Fleet Analytics
+• Analytics
 
-• Alert Management
-
----
-
-### Design System
-
-Scalable component library
-
-• Tokens
-
-• Typography
-
-• Color System
-
-• Data Tables
-
-• Charts
-
-• Forms
+• Design System
 
 ---
 
 ### IoT Dashboard
 
-Monitoring dashboard for connected devices
+Real-time monitoring dashboard for
 
-• Real-time telemetry
+• GPS Locks
+
+• Sensors
+
+• Battery Monitoring
+
+• Telemetry
 
 • Device Management
 
-• Alerts
+---
 
-• Reports
+### Design Systems
+
+Building scalable component libraries and design tokens for enterprise products.
 
 ---
 
-# 📈 GitHub Stats
+# 📊 GitHub Analytics
 
-![](https://github-readme-stats.vercel.app/api?username=YOURUSERNAME&show_icons=true&theme=tokyonight)
+<p align="center">
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=YOURUSERNAME&theme=tokyonight)
+<img width="48%" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight"/>
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=YOURUSERNAME&layout=compact&theme=tokyonight)
+<img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight"/>
+
+</p>
+
+<p align="center">
+
+<img width="75%" src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=tokyo-night"/>
+
+</p>
 
 ---
 
-# 📊 Contribution Graph
+# 🌍 Connect
 
-![](https://github-readme-activity-graph.vercel.app/graph?username=YOURUSERNAME&theme=github-compact)
+LinkedIn
 
----
+Portfolio
 
-# 🎯 Currently Interested In
-
-- Design Engineering
-- Product Design
-- Motion UI
-- AI Interfaces
-- Enterprise SaaS
-- IoT
-- Vehicle Tracking
-- 3D Interfaces
+Email
 
 ---
 
 # 💭 Philosophy
 
-> Good design isn't decoration.
+> Great software isn't built by writing more code.
 
-> Good design reduces thinking.
-
-> Great products disappear into the user's workflow.
+> It's built by understanding users first.
 
 ---
 
 <div align="center">
 
-### Thanks for visiting 👋
+### Thanks for visiting.
 
-⭐ Star a repository if you found it useful.
+⭐ Star a repository if you find something useful.
 
 </div>

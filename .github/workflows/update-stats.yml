@@ -31,4 +31,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore: update profile stats'
-          file_pattern: README.md assets/terminal.svg
+          file_pattern: README.md

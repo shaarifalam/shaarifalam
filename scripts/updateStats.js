@@ -192,17 +192,17 @@ function createProfileCardSvg({ user, totals, generatedAt, asciiLines }) {
     ['Updated', generatedAt, 'green']
   ];
 
-  return `<svg width="1200" height="540" viewBox="0 0 1200 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shaarif Alam README terminal profile">
-  <rect width="1200" height="540" fill="#0d1117"/>
+  return `<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shaarif Alam README terminal profile">
+  <rect width="960" height="540" fill="#0d1117"/>
   <text x="18" y="27" fill="#7d8590" font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="11">shaarifalam / README.md</text>
-  <rect x="18" y="47" width="1164" height="465" rx="6" fill="#111820" stroke="#30363d"/>
+  <rect x="18" y="47" width="924" height="465" rx="6" fill="#111820" stroke="#30363d"/>
   <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace">
-    <g font-size="2.12" font-weight="700" fill="#c9d1d9">
-      ${asciiLines.map((line, index) => `<text x="38" y="${76 + index * 4.55}" xml:space="preserve">${escapeXml(line)}</text>`).join('\n      ')}
+    <g font-size="1.95" font-weight="700" fill="#c9d1d9">
+      ${asciiLines.map((line, index) => `<text x="42" y="${76 + index * 5.2}" xml:space="preserve">${escapeXml(line)}</text>`).join('\n      ')}
     </g>
-    <g font-size="8.2">
-      <text x="380" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
-      <text x="492" y="78" fill="#7d8590">----------------------------------------------------------------</text>
+    <g font-size="9.2">
+      <text x="386" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
+      <text x="500" y="78" fill="#7d8590">------------------------------------------------------</text>
       ${renderInfoRows(rows)}
     </g>
   </g>
@@ -211,14 +211,16 @@ function createProfileCardSvg({ user, totals, generatedAt, asciiLines }) {
 }
 
 function renderInfoRows(rows) {
-  let y = 102;
-  const labelX = 380;
-  const valueX = 595;
+  let y = 101;
+  const labelX = 386;
+  const valueX = 575;
+  const valueMaxWidth = 275;
+  const charWidth = 5.55;
 
   return rows
     .map((row) => {
       if (!row) {
-        y += 10;
+        y += 8;
         return '';
       }
 
@@ -230,11 +232,16 @@ function renderInfoRows(rows) {
         return line;
       }
 
-      const labelWidth = label.length * 4.9;
-      const dotCount = Math.max(3, Math.floor((valueX - labelX - labelWidth) / 4.9));
+      const labelWidth = label.length * charWidth;
+      const dotCount = Math.max(3, Math.floor((valueX - labelX - labelWidth) / charWidth));
       const valueColor = type === 'green' ? '#7ee787' : type === 'blue' ? '#79c0ff' : '#c9d1d9';
-      const line = `<text x="${labelX}" y="${y}" fill="#f0a45d">${escapeXml(label)}</text><text x="${labelX + labelWidth}" y="${y}" fill="#30363d">${'.'.repeat(dotCount)}</text><text x="${valueX}" y="${y}" fill="${valueColor}">${escapeXml(value)}</text>`;
-      y += 12.5;
+      const valueTextLength = String(value).length * 6.2;
+      const fitAttrs =
+        valueTextLength > valueMaxWidth
+          ? ` textLength="${valueMaxWidth}" lengthAdjust="spacingAndGlyphs"`
+          : '';
+      const line = `<text x="${labelX}" y="${y}" fill="#f0a45d">${escapeXml(label)}</text><text x="${labelX + labelWidth}" y="${y}" fill="#30363d">${'.'.repeat(dotCount)}</text><text x="${valueX}" y="${y}" fill="${valueColor}"${fitAttrs}>${escapeXml(value)}</text>`;
+      y += 12.9;
       return line;
     })
     .filter(Boolean)

@@ -13,13 +13,16 @@ const username =
   process.env.GITHUB_REPOSITORY_OWNER ||
   'shaarifalam';
 
-const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
+const token = process.env.PROFILE_STATS_TOKEN || process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
 const usePlaceholder = process.argv.includes('--placeholder');
+const now = new Date();
+const uptimeStart = new Date(process.env.UPTIME_START || '2001-07-03T00:00:00Z');
 
 const query = `
   query ProfileStats($login: String!, $cursor: String) {
     user(login: $login) {
       login
+      createdAt
       followers { totalCount }
       following { totalCount }
       repositories(
@@ -27,7 +30,6 @@ const query = `
         after: $cursor
         ownerAffiliations: OWNER
         isFork: false
-        privacy: PUBLIC
         orderBy: { field: STARGAZERS, direction: DESC }
       ) {
         totalCount
@@ -45,6 +47,19 @@ const query = `
         }
       }
       contributionsCollection {
+        totalCommitContributions
+        contributionCalendar {
+          totalContributions
+        }
+      }
+    }
+  }
+`;
+
+const contributionsQuery = `
+  query Contributions($login: String!, $from: DateTime!, $to: DateTime!) {
+    user(login: $login) {
+      contributionsCollection(from: $from, to: $to) {
         totalCommitContributions
         contributionCalendar {
           totalContributions
@@ -74,13 +89,14 @@ const generatedAt = usePlaceholder
       dateStyle: 'medium',
       timeStyle: 'short',
       timeZone: 'UTC'
-    }).format(new Date());
+    }).format(now);
+const uptime = formatElapsedTime(uptimeStart, now);
 const asciiLines = await readAsciiArt();
 
 await mkdir(assetDir, { recursive: true });
 await writeFile(
   cardPath,
-  createProfileCardSvg({ user, totals, generatedAt, asciiLines }),
+  createProfileCardSvg({ user, totals, generatedAt, uptime, asciiLines }),
   'utf8'
 );
 await updateReadme();
@@ -106,13 +122,50 @@ async function fetchProfileStats(login) {
   } while (user.repositories.pageInfo.hasNextPage);
 
   user.repositories.nodes = repos;
+  user.contributionsCollection = await fetchAllTimeContributions(
+    login,
+    new Date(user.createdAt),
+    now
+  );
   return user;
+}
+
+async function fetchAllTimeContributions(login, fromDate, toDate) {
+  const totals = {
+    totalCommitContributions: 0,
+    contributionCalendar: {
+      totalContributions: 0
+    }
+  };
+
+  for (let year = fromDate.getUTCFullYear(); year <= toDate.getUTCFullYear(); year += 1) {
+    const from = new Date(Date.UTC(year, 0, 1));
+    const to = new Date(Date.UTC(year, 11, 31, 23, 59, 59));
+    const boundedFrom = from < fromDate ? fromDate : from;
+    const boundedTo = to > toDate ? toDate : to;
+
+    const payload = await fetchGraphQL(contributionsQuery, {
+      login,
+      from: boundedFrom.toISOString(),
+      to: boundedTo.toISOString()
+    });
+    const collection = payload.data?.user?.contributionsCollection;
+
+    if (collection) {
+      totals.totalCommitContributions += collection.totalCommitContributions || 0;
+      totals.contributionCalendar.totalContributions +=
+        collection.contributionCalendar?.totalContributions || 0;
+    }
+  }
+
+  return totals;
 }
 
 async function fetchPublicProfileStats(login) {
   const profile = await fetchRest(`https://api.github.com/users/${encodeURIComponent(login)}`);
   const repos = await fetchPublicRepos(login);
   const commitCount = await fetchPublicCommitCount(login);
+  const contributionCount = await fetchPublicContributionCount(login, new Date(profile.created_at), now);
 
   return {
     login: profile.login,
@@ -125,10 +178,33 @@ async function fetchPublicProfileStats(login) {
     contributionsCollection: {
       totalCommitContributions: commitCount,
       contributionCalendar: {
-        totalContributions: 0
+        totalContributions: contributionCount
       }
     }
   };
+}
+
+async function fetchPublicContributionCount(login, fromDate, toDate) {
+  let total = 0;
+
+  for (let year = fromDate.getUTCFullYear(); year <= toDate.getUTCFullYear(); year += 1) {
+    total += await fetchPublicContributionYear(login, year);
+  }
+
+  return total;
+}
+
+async function fetchPublicContributionYear(login, year) {
+  try {
+    const html = await fetchText(
+      `https://github.com/users/${encodeURIComponent(login)}/contributions?from=${year}-01-01&to=${year}-12-31`
+    );
+    const counts = [...html.matchAll(/data-count="(\d+)"/g)].map((match) => Number(match[1]));
+
+    return counts.reduce((sum, count) => sum + count, 0);
+  } catch {
+    return 0;
+  }
 }
 
 async function fetchPublicCommitCount(login) {
@@ -187,6 +263,21 @@ async function fetchRest(url, options = {}) {
   return response.json();
 }
 
+async function fetchText(url) {
+  const response = await fetch(url, {
+    headers: {
+      Accept: 'text/html',
+      'User-Agent': `${username}-profile-stats`
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`GitHub page request failed: ${response.status} ${response.statusText}`);
+  }
+
+  return response.text();
+}
+
 async function fetchGraphQL(graphqlQuery, variables) {
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
@@ -234,10 +325,10 @@ async function readAsciiArt() {
     .filter((line) => line.length > 0);
 }
 
-function createProfileCardSvg({ user, totals, generatedAt, asciiLines }) {
+function createProfileCardSvg({ user, totals, generatedAt, uptime, asciiLines }) {
   const rows = [
     ['OS', 'Web, Mobile, Embedded, Linux', 'blue'],
-    ['Uptime', '22+ years', 'blue'],
+    ['Uptime', uptime, 'blue'],
     ['Host', 'UI/UX Designer, Frontend', 'blue'],
     ['Kernel', 'IoT Software Designer', 'blue'],
     ['IDE', 'Figma, VS Code', 'blue'],
@@ -343,6 +434,49 @@ function createPlaceholderUser(login) {
       }
     }
   };
+}
+
+function formatElapsedTime(start, end) {
+  if (Number.isNaN(start.getTime()) || start > end) {
+    return '22+ years';
+  }
+
+  let cursor = new Date(start);
+  let years = 0;
+  let months = 0;
+
+  while (addUtcYears(cursor, 1) <= end) {
+    cursor = addUtcYears(cursor, 1);
+    years += 1;
+  }
+
+  while (addUtcMonths(cursor, 1) <= end) {
+    cursor = addUtcMonths(cursor, 1);
+    months += 1;
+  }
+
+  let remainingMs = end.getTime() - cursor.getTime();
+  const days = Math.floor(remainingMs / 86_400_000);
+  remainingMs -= days * 86_400_000;
+  const hours = Math.floor(remainingMs / 3_600_000);
+  remainingMs -= hours * 3_600_000;
+  const minutes = Math.floor(remainingMs / 60_000);
+  remainingMs -= minutes * 60_000;
+  const seconds = Math.floor(remainingMs / 1_000);
+
+  return `${years}y ${months}mo ${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+function addUtcYears(date, years) {
+  const next = new Date(date);
+  next.setUTCFullYear(next.getUTCFullYear() + years);
+  return next;
+}
+
+function addUtcMonths(date, months) {
+  const next = new Date(date);
+  next.setUTCMonth(next.getUTCMonth() + months);
+  return next;
 }
 
 function formatNumber(value) {

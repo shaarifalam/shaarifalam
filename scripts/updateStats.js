@@ -61,6 +61,14 @@ if (!token && !usePlaceholder) {
 }
 
 const user = usePlaceholder ? createPlaceholderUser(username) : await fetchProfileStats(username);
+const totals = user.repositories.nodes.reduce(
+  (acc, repo) => {
+    acc.stars += repo.stargazerCount;
+    acc.forks += repo.forkCount;
+    return acc;
+  },
+  { stars: 0, forks: 0 }
+);
 
 const generatedAt = usePlaceholder
   ? 'Waiting'
@@ -74,7 +82,7 @@ const asciiLines = await readAsciiArt();
 await mkdir(assetDir, { recursive: true });
 await writeFile(
   cardPath,
-  createProfileCardSvg({ asciiLines }),
+  createProfileCardSvg({ user, totals, generatedAt, asciiLines }),
   'utf8'
 );
 await updateReadme();
@@ -150,7 +158,7 @@ async function readAsciiArt() {
     .filter((line) => line.length > 0);
 }
 
-function createProfileCardSvg({ asciiLines }) {
+function createProfileCardSvg({ user, totals, generatedAt, asciiLines }) {
   const rows = [
     ['OS', 'Web, Mobile, Embedded, Linux', 'blue'],
     ['Uptime', '22+ years', 'blue'],
@@ -167,20 +175,34 @@ function createProfileCardSvg({ asciiLines }) {
     ['Data.Storage', 'MySQL • PostgreSQL • Firebase', 'body'],
     ['Protocols', 'MQTT • REST API • WebSocket', 'body'],
     ['Industry.Focus', 'Fleet Management • Telematics • Asset Tracking', 'body'],
-    ['Current.Mission', 'Building intelligent IoT experiences 🚀', 'green']
+    ['Current.Mission', 'Building intelligent IoT experiences 🚀', 'green'],
+    null,
+    ['Contact', '', 'heading'],
+    ['Email.Personal', 'shaarifalam@gmail.com', 'blue'],
+    ['GitHub', `github.com/${user.login}`, 'blue'],
+    ['LinkedIn', 'linkedin.com/in/shaarifalam', 'blue'],
+    ['Discord', 'shaarifalam', 'blue'],
+    null,
+    ['GitHub Stats', '', 'heading'],
+    ['Repos', formatNumber(user.repositories.totalCount), 'green'],
+    ['Stars', formatNumber(totals.stars), 'body'],
+    ['Commits', formatNumber(user.contributionsCollection.totalCommitContributions), 'blue'],
+    ['Followers', formatNumber(user.followers.totalCount), 'body'],
+    ['Contributions', formatNumber(user.contributionsCollection.contributionCalendar.totalContributions), 'blue'],
+    ['Updated', generatedAt, 'green']
   ];
 
-  return `<svg width="960" height="470" viewBox="0 0 960 470" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shaarif Alam README terminal profile">
-  <rect width="960" height="470" fill="#0d1117"/>
+  return `<svg width="1200" height="540" viewBox="0 0 1200 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shaarif Alam README terminal profile">
+  <rect width="1200" height="540" fill="#0d1117"/>
   <text x="18" y="27" fill="#7d8590" font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="11">shaarifalam / README.md</text>
-  <rect x="18" y="47" width="924" height="390" rx="6" fill="#111820" stroke="#30363d"/>
+  <rect x="18" y="47" width="1164" height="465" rx="6" fill="#111820" stroke="#30363d"/>
   <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace">
     <g font-size="2.12" font-weight="700" fill="#c9d1d9">
       ${asciiLines.map((line, index) => `<text x="38" y="${76 + index * 4.55}" xml:space="preserve">${escapeXml(line)}</text>`).join('\n      ')}
     </g>
-    <g font-size="7.3">
-      <text x="365" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
-      <text x="480" y="78" fill="#7d8590">---------------------------------------------</text>
+    <g font-size="8.2">
+      <text x="380" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
+      <text x="492" y="78" fill="#7d8590">----------------------------------------------------------------</text>
       ${renderInfoRows(rows)}
     </g>
   </g>
@@ -190,13 +212,13 @@ function createProfileCardSvg({ asciiLines }) {
 
 function renderInfoRows(rows) {
   let y = 102;
-  const labelX = 365;
-  const valueX = 520;
+  const labelX = 380;
+  const valueX = 595;
 
   return rows
     .map((row) => {
       if (!row) {
-        y += 12;
+        y += 10;
         return '';
       }
 
@@ -204,15 +226,15 @@ function renderInfoRows(rows) {
 
       if (type === 'heading') {
         const line = `<text x="${labelX}" y="${y}" fill="#c9d1d9" font-weight="700">${escapeXml(label)}</text>`;
-        y += 18;
+        y += 13;
         return line;
       }
 
-      const labelWidth = label.length * 4.4;
-      const dotCount = Math.max(3, Math.floor((valueX - labelX - labelWidth) / 4.4));
+      const labelWidth = label.length * 4.9;
+      const dotCount = Math.max(3, Math.floor((valueX - labelX - labelWidth) / 4.9));
       const valueColor = type === 'green' ? '#7ee787' : type === 'blue' ? '#79c0ff' : '#c9d1d9';
       const line = `<text x="${labelX}" y="${y}" fill="#f0a45d">${escapeXml(label)}</text><text x="${labelX + labelWidth}" y="${y}" fill="#30363d">${'.'.repeat(dotCount)}</text><text x="${valueX}" y="${y}" fill="${valueColor}">${escapeXml(value)}</text>`;
-      y += 14.5;
+      y += 12.5;
       return line;
     })
     .filter(Boolean)

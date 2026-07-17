@@ -1,9 +1,12 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
+const assetDir = path.join(root, 'README-assets');
+const asciiPath = path.join(assetDir, 'ascii-art (1).txt');
+const cardPath = path.join(assetDir, 'profile-card.svg');
 
 const username =
   process.env.GITHUB_USERNAME ||
@@ -11,18 +14,12 @@ const username =
   'shaarifalam';
 
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
-
-if (!token) {
-  console.error('Missing GITHUB_TOKEN or GH_TOKEN.');
-  console.error('Create a GitHub token locally, or let GitHub Actions provide GITHUB_TOKEN.');
-  process.exit(1);
-}
+const usePlaceholder = process.argv.includes('--placeholder');
 
 const query = `
   query ProfileStats($login: String!, $cursor: String) {
     user(login: $login) {
       login
-      name
       followers { totalCount }
       following { totalCount }
       repositories(
@@ -49,9 +46,6 @@ const query = `
       }
       contributionsCollection {
         totalCommitContributions
-        totalIssueContributions
-        totalPullRequestContributions
-        totalPullRequestReviewContributions
         contributionCalendar {
           totalContributions
         }
@@ -60,64 +54,32 @@ const query = `
   }
 `;
 
-const user = await fetchProfileStats(username);
-const repos = user.repositories.nodes;
-const totals = repos.reduce(
-  (acc, repo) => {
-    acc.stars += repo.stargazerCount;
-    acc.forks += repo.forkCount;
-    if (repo.primaryLanguage?.name) {
-      acc.languages.set(
-        repo.primaryLanguage.name,
-        (acc.languages.get(repo.primaryLanguage.name) || 0) + 1
-      );
-    }
-    return acc;
-  },
-  { stars: 0, forks: 0, languages: new Map() }
+if (!token && !usePlaceholder) {
+  console.error('Missing GITHUB_TOKEN or GH_TOKEN.');
+  console.error('Run `npm run update-stats -- --placeholder` to render a local placeholder card.');
+  process.exit(1);
+}
+
+const user = usePlaceholder ? createPlaceholderUser(username) : await fetchProfileStats(username);
+
+const generatedAt = usePlaceholder
+  ? 'Waiting'
+  : new Intl.DateTimeFormat('en', {
+      dateStyle: 'medium',
+      timeStyle: 'short',
+      timeZone: 'UTC'
+    }).format(new Date());
+const asciiLines = await readAsciiArt();
+
+await mkdir(assetDir, { recursive: true });
+await writeFile(
+  cardPath,
+  createProfileCardSvg({ asciiLines }),
+  'utf8'
 );
+await updateReadme();
 
-const topLanguages = [...totals.languages.entries()]
-  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-  .slice(0, 4)
-  .map(([language]) => language)
-  .join(' • ') || 'Design Systems • Frontend';
-
-const generatedAt = new Intl.DateTimeFormat('en', {
-  dateStyle: 'medium',
-  timeStyle: 'short',
-  timeZone: 'UTC'
-}).format(new Date());
-
-const statsBlock = `<pre><sub>shaarif@alam -----------------------------------------
-OS............................. Web, Mobile, IoT, Linux
-Uptime......................... 22+ years
-Host........................... UI/UX Designer, Frontend
-Kernel......................... IoT Software Designer
-IDE............................ Figma, VS Code, Blender
-
-Languages.Programming......... ${escapeXml(topLanguages)}
-Languages.Computer............ HTML, CSS, React, Node.js
-Languages.Real................ English, Hindi, Urdu
-
-Hobbies.Software.............. Dashboards, Design Systems
-Hobbies.Hardware.............. GPS, Fleet, IoT Devices
-
-Contact
-Email.Personal................ shaarifalam@gmail.com
-Email.Personal................ github.com/${escapeXml(user.login)}
-Email.Work.................... available on request
-LinkedIn...................... linkedin.com/in/shaarifalam
-Discord....................... shaarifalam
-
-GitHub Stats -------------------------------
-Repos: ${formatNumber(user.repositories.totalCount)}   Stars: ${formatNumber(totals.stars)}   Commits: ${formatNumber(user.contributionsCollection.totalCommitContributions)}   Followers: ${formatNumber(user.followers.totalCount)}
-Lines of Code on GitHub: N/A
-Updated: ${escapeXml(generatedAt)} UTC</sub></pre>`;
-
-await updateReadme(statsBlock);
-
-console.log(`Updated stats for ${user.login}.`);
+console.log(`Updated README card for ${user.login}.`);
 
 async function fetchProfileStats(login) {
   let cursor;
@@ -165,27 +127,121 @@ async function fetchGraphQL(graphqlQuery, variables) {
   return payload;
 }
 
-async function updateReadme(block) {
+async function updateReadme() {
   const readmePath = path.join(root, 'README.md');
   const readme = await readFile(readmePath, 'utf8');
-  const start = '<!-- GITHUB-STATS:START -->';
-  const end = '<!-- GITHUB-STATS:END -->';
-  const pattern = new RegExp(`${escapeRegExp(start)}[\\s\\S]*?${escapeRegExp(end)}`);
+  const nextReadme = `<p align="center">
+  <img src="./README-assets/profile-card.svg" alt="Shaarif Alam README terminal profile" width="100%" />
+</p>
+`;
 
-  if (!pattern.test(readme)) {
-    throw new Error(`README.md is missing ${start} / ${end} markers.`);
+  if (readme === nextReadme) {
+    return;
   }
 
-  const nextReadme = readme.replace(pattern, `${start}\n${block}\n${end}`);
   await writeFile(readmePath, nextReadme, 'utf8');
+}
+
+async function readAsciiArt() {
+  const ascii = await readFile(asciiPath, 'utf8');
+  return ascii
+    .replaceAll('\u00a0', ' ')
+    .split(/\r?\n/)
+    .filter((line) => line.length > 0);
+}
+
+function createProfileCardSvg({ asciiLines }) {
+  const rows = [
+    ['OS', 'Web, Mobile, Embedded, Linux', 'blue'],
+    ['Uptime', '22+ years', 'blue'],
+    ['Host', 'UI/UX Designer, Frontend', 'blue'],
+    ['Kernel', 'IoT Software Designer', 'blue'],
+    ['IDE', 'Figma, VS Code', 'blue'],
+    null,
+    ['Embedded.Systems', 'GPS • GSM • BLE • RFID • IoT Sensors', 'body'],
+    ['Mechanical.CAD', 'SolidWorks • Blender', 'body'],
+    ['Frontend.Stack', 'React • TypeScript • Tailwind CSS', 'body'],
+    ['Design.Systems', 'Figma • UI/UX • Component Libraries', 'body'],
+    ['Mapping.Tech', 'Google Maps • Mapbox • GIS', 'body'],
+    ['Cloud.Services', 'GitHub • Vercel • Firebase', 'body'],
+    ['Data.Storage', 'MySQL • PostgreSQL • Firebase', 'body'],
+    ['Protocols', 'MQTT • REST API • WebSocket', 'body'],
+    ['Industry.Focus', 'Fleet Management • Telematics • Asset Tracking', 'body'],
+    ['Current.Mission', 'Building intelligent IoT experiences 🚀', 'green']
+  ];
+
+  return `<svg width="960" height="470" viewBox="0 0 960 470" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shaarif Alam README terminal profile">
+  <rect width="960" height="470" fill="#0d1117"/>
+  <text x="18" y="27" fill="#7d8590" font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="11">shaarifalam / README.md</text>
+  <rect x="18" y="47" width="924" height="390" rx="6" fill="#111820" stroke="#30363d"/>
+  <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace">
+    <g font-size="2.12" font-weight="700" fill="#c9d1d9">
+      ${asciiLines.map((line, index) => `<text x="38" y="${76 + index * 4.55}" xml:space="preserve">${escapeXml(line)}</text>`).join('\n      ')}
+    </g>
+    <g font-size="7.3">
+      <text x="365" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
+      <text x="480" y="78" fill="#7d8590">---------------------------------------------</text>
+      ${renderInfoRows(rows)}
+    </g>
+  </g>
+</svg>
+`;
+}
+
+function renderInfoRows(rows) {
+  let y = 102;
+  const labelX = 365;
+  const valueX = 520;
+
+  return rows
+    .map((row) => {
+      if (!row) {
+        y += 12;
+        return '';
+      }
+
+      const [label, value, type] = row;
+
+      if (type === 'heading') {
+        const line = `<text x="${labelX}" y="${y}" fill="#c9d1d9" font-weight="700">${escapeXml(label)}</text>`;
+        y += 18;
+        return line;
+      }
+
+      const labelWidth = label.length * 4.4;
+      const dotCount = Math.max(3, Math.floor((valueX - labelX - labelWidth) / 4.4));
+      const valueColor = type === 'green' ? '#7ee787' : type === 'blue' ? '#79c0ff' : '#c9d1d9';
+      const line = `<text x="${labelX}" y="${y}" fill="#f0a45d">${escapeXml(label)}</text><text x="${labelX + labelWidth}" y="${y}" fill="#30363d">${'.'.repeat(dotCount)}</text><text x="${valueX}" y="${y}" fill="${valueColor}">${escapeXml(value)}</text>`;
+      y += 14.5;
+      return line;
+    })
+    .filter(Boolean)
+    .join('\n      ');
+}
+
+function createPlaceholderUser(login) {
+  return {
+    login,
+    followers: { totalCount: 0 },
+    following: { totalCount: 0 },
+    repositories: {
+      totalCount: 0,
+      nodes: [
+        { name: 'profile', stargazerCount: 0, forkCount: 0, primaryLanguage: { name: 'JavaScript' } },
+        { name: 'design-system', stargazerCount: 0, forkCount: 0, primaryLanguage: { name: 'TypeScript' } }
+      ]
+    },
+    contributionsCollection: {
+      totalCommitContributions: 0,
+      contributionCalendar: {
+        totalContributions: 0
+      }
+    }
+  };
 }
 
 function formatNumber(value) {
   return new Intl.NumberFormat('en-US').format(value || 0);
-}
-
-function escapeRegExp(value) {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function escapeXml(value) {

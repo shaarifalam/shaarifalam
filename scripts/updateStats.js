@@ -94,24 +94,20 @@ const generatedAt = new Intl.DateTimeFormat('en', {
   timeZone: 'UTC'
 }).format(new Date());
 
-const statsBlock = `\`\`\`text
-${user.login}@github
+const statsText = `${user.login}@github
 ──────────────────────────────
-
+OS        : GitHub README
 Role      : UI/UX Designer
-Industry  : IoT & Vehicle Tracking
 Frontend  : React • TypeScript
 Design    : Figma • Design Systems
-3D CAD    : SolidWorks • Blender
+Focus     : IoT • Fleet • GPS
 
-GitHub
+GitHub Stats
 Repos     : ${formatNumber(user.repositories.totalCount)}
 Stars     : ${formatNumber(totals.stars)}
 Forks     : ${formatNumber(totals.forks)}
 Followers : ${formatNumber(user.followers.totalCount)}
 Following : ${formatNumber(user.following.totalCount)}
-
-Contributions
 Year      : ${formatNumber(user.contributionsCollection.contributionCalendar.totalContributions)}
 Commits   : ${formatNumber(user.contributionsCollection.totalCommitContributions)}
 PRs       : ${formatNumber(user.contributionsCollection.totalPullRequestContributions)}
@@ -119,15 +115,12 @@ Issues    : ${formatNumber(user.contributionsCollection.totalIssueContributions)
 Reviews   : ${formatNumber(user.contributionsCollection.totalPullRequestReviewContributions)}
 
 Top Langs : ${topLanguages}
-Top Repos : ${topRepos}
 Updated   : ${generatedAt} UTC
 
-Currently Building
-• Enterprise Dashboards
-• Fleet Management
-• GPS Tracking
-• UX Systems
-\`\`\``;
+Contact
+GitHub    : github.com/${user.login}`;
+
+const statsBlock = `<pre>\n${escapeXml(statsText)}\n</pre>`;
 
 await updateReadme(statsBlock);
 await writeFile(

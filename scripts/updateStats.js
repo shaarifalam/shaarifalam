@@ -293,17 +293,12 @@ function createProfileCardSvg({ user, totals, topLanguages, generatedAt }) {
     ['GitHub', `github.com/${user.login}`, 'blue'],
     ['LinkedIn', 'linkedin.com/in/shaarifalam', 'blue'],
     null,
-    ['GitHub Stats', '', 'heading'],
-    ['Repos', formatNumber(user.repositories.totalCount), 'green'],
-    ['Contributions', formatNumber(user.contributionsCollection.contributionCalendar.totalContributions), 'green'],
-    ['Stars', formatNumber(totals.stars), 'blue'],
-    ['Followers', formatNumber(user.followers.totalCount), 'red'],
-    ['Updated', `${generatedAt} UTC`, 'body']
+    ['GitHub Stats', '', 'heading']
   ];
 
-  const rightX = 330;
-  const valueX = 570;
-  let y = 92;
+  const rightX = 390;
+  const valueX = 665;
+  let y = 100;
   const rightRows = rows
     .map((row) => {
       if (!row) {
@@ -329,20 +324,26 @@ function createProfileCardSvg({ user, totals, topLanguages, generatedAt }) {
     .join('\n    ');
 
   const ascii = asciiLines
-    .map((line, index) => `<text x="28" y="${68 + index * 11}" xml:space="preserve">${escapeXml(line)}</text>`)
+    .map((line, index) => `<text x="52" y="${84 + index * 13}" xml:space="preserve">${escapeXml(line)}</text>`)
     .join('\n    ');
 
-  return `<svg width="820" height="460" viewBox="0 0 820 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shaarif Alam README terminal profile">
-  <rect width="820" height="460" fill="#0d1117"/>
-  <text x="16" y="28" fill="#8b949e" font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="12">shaarifalam / README.md</text>
-  <rect x="16" y="44" width="788" height="396" rx="4" fill="#111820" stroke="#30363d"/>
-  <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="6.8" fill="#c9d1d9">
+  return `<svg width="900" height="470" viewBox="0 0 960 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shaarif Alam README terminal profile">
+  <rect width="960" height="520" fill="#0d1117"/>
+  <text x="24" y="32" fill="#8b949e" font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="14">shaarifalam / README.md</text>
+  <rect x="22" y="52" width="916" height="436" rx="5" fill="#111820" stroke="#30363d"/>
+  <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="6.8" font-weight="700" fill="#c9d1d9">
     ${ascii}
   </g>
-  <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="12">
-    <text x="${rightX}" y="68" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
-    <text x="424" y="68" fill="#8b949e">---------------------------------</text>
+  <g font-family="SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="14">
+    <text x="${rightX}" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
+    <text x="492" y="78" fill="#8b949e">-----------------------------------------</text>
     ${rightRows}
+    <g font-size="12">
+      <text x="${rightX}" y="436" fill="#f0a45d">Repos:</text><text x="438" y="436" fill="#7ee787">${formatNumber(user.repositories.totalCount)}</text>
+      <text x="532" y="436" fill="#f0a45d">Contributions:</text><text x="628" y="436" fill="#7ee787">${formatNumber(user.contributionsCollection.contributionCalendar.totalContributions)}</text>
+      <text x="700" y="436" fill="#f0a45d">Stars:</text><text x="748" y="436" fill="#79c0ff">${formatNumber(totals.stars)}</text>
+      <text x="810" y="436" fill="#f0a45d">Followers:</text><text x="888" y="436" fill="#ff7b72">${formatNumber(user.followers.totalCount)}</text>
+    </g>
   </g>
 </svg>
 `;

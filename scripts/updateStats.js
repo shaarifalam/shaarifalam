@@ -94,35 +94,6 @@ const generatedAt = new Intl.DateTimeFormat('en', {
   timeZone: 'UTC'
 }).format(new Date());
 
-const statsText = `shaarif@alam -----------------------------------------
-OS............................. Web, Mobile, IoT, Linux
-Uptime................................. 22+ years
-Host.......................... UI/UX Designer, Frontend
-Kernel.................... IoT Software Designer
-IDE............................ Figma, VS Code, Blender
-
-Languages.Programming........ ${topLanguages}
-Languages.Computer........... HTML, CSS, React, Node.js
-Languages.Real............... English, Hindi, Urdu
-
-Hobbies.Software............. Dashboards, Design Systems
-Hobbies.Hardware............. GPS, Fleet, IoT Devices
-
-Contact
-Email.Personal............... shaarifalam@gmail.com
-GitHub....................... github.com/${user.login}
-LinkedIn..................... linkedin.com/in/shaarifalam
-
-GitHub Stats
-Repos........................ ${formatNumber(user.repositories.totalCount)}
-Contributions................ ${formatNumber(user.contributionsCollection.contributionCalendar.totalContributions)}
-Stars........................ ${formatNumber(totals.stars)}
-Followers.................... ${formatNumber(user.followers.totalCount)}
-Forks........................ ${formatNumber(totals.forks)}
-Commits...................... ${formatNumber(user.contributionsCollection.totalCommitContributions)}
-PRs.......................... ${formatNumber(user.contributionsCollection.totalPullRequestContributions)}
-Updated...................... ${generatedAt} UTC`;
-
 await writeFile(
   path.join(root, 'assets', 'profile-card.svg'),
   createProfileCardSvg({ user, totals, topLanguages, generatedAt }),
@@ -290,8 +261,10 @@ function createProfileCardSvg({ user, totals, topLanguages, generatedAt }) {
     null,
     ['Contact', '', 'heading'],
     ['Email.Personal', 'shaarifalam@gmail.com', 'blue'],
-    ['GitHub', `github.com/${user.login}`, 'blue'],
+    ['Email.Personal', `github.com/${user.login}`, 'blue'],
+    ['Email.Work', 'available on request', 'blue'],
     ['LinkedIn', 'linkedin.com/in/shaarifalam', 'blue'],
+    ['Discord', 'shaarifalam', 'blue'],
     null,
     ['GitHub Stats', '', 'heading']
   ];
@@ -315,9 +288,9 @@ function createProfileCardSvg({ user, totals, topLanguages, generatedAt }) {
       }
 
       const valueColor = type === 'green' ? '#7ee787' : type === 'red' ? '#ff7b72' : type === 'blue' ? '#79c0ff' : '#c9d1d9';
-      const dotted = '.'.repeat(Math.max(3, 32 - label.length));
+      const dotted = '.'.repeat(Math.max(3, 30 - label.length));
       const line = `<text x="${rightX}" y="${y}" fill="#f0a45d">${escapeXml(label)}</text><text x="${rightX + label.length * 8}" y="${y}" fill="#30363d">${dotted}</text><text x="${valueX}" y="${y}" fill="${valueColor}">${escapeXml(value)}</text>`;
-      y += 16;
+      y += 15;
       return line;
     })
     .filter(Boolean)
@@ -340,9 +313,10 @@ function createProfileCardSvg({ user, totals, topLanguages, generatedAt }) {
     ${rightRows}
     <g font-size="12">
       <text x="${rightX}" y="436" fill="#f0a45d">Repos:</text><text x="438" y="436" fill="#7ee787">${formatNumber(user.repositories.totalCount)}</text>
-      <text x="532" y="436" fill="#f0a45d">Contributions:</text><text x="628" y="436" fill="#7ee787">${formatNumber(user.contributionsCollection.contributionCalendar.totalContributions)}</text>
-      <text x="700" y="436" fill="#f0a45d">Stars:</text><text x="748" y="436" fill="#79c0ff">${formatNumber(totals.stars)}</text>
-      <text x="810" y="436" fill="#f0a45d">Followers:</text><text x="888" y="436" fill="#ff7b72">${formatNumber(user.followers.totalCount)}</text>
+      <text x="500" y="436" fill="#f0a45d">Stars:</text><text x="548" y="436" fill="#79c0ff">${formatNumber(totals.stars)}</text>
+      <text x="608" y="436" fill="#f0a45d">Commits:</text><text x="668" y="436" fill="#c9d1d9">${formatNumber(user.contributionsCollection.totalCommitContributions)}</text>
+      <text x="742" y="436" fill="#f0a45d">Followers:</text><text x="820" y="436" fill="#ff7b72">${formatNumber(user.followers.totalCount)}</text>
+      <text x="${rightX}" y="456" fill="#f0a45d">Lines of Code on GitHub:</text><text x="572" y="456" fill="#7ee787">N/A</text>
     </g>
   </g>
 </svg>

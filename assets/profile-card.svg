@@ -38,31 +38,34 @@
     <text x="390" y="78" fill="#c9d1d9" font-weight="700">shaarif@alam</text>
     <text x="492" y="78" fill="#8b949e">-----------------------------------------</text>
 
-    <text x="390" y="100" fill="#f0a45d">OS</text><text x="406" y="100" fill="#30363d">..............................</text><text x="665" y="100" fill="#79c0ff">Web, Mobile, IoT, Linux</text>
-    <text x="390" y="116" fill="#f0a45d">Uptime</text><text x="438" y="116" fill="#30363d">..........................</text><text x="665" y="116" fill="#79c0ff">22+ years</text>
-    <text x="390" y="132" fill="#f0a45d">Host</text><text x="422" y="132" fill="#30363d">............................</text><text x="665" y="132" fill="#79c0ff">UI/UX Designer, Frontend</text>
-    <text x="390" y="148" fill="#f0a45d">Kernel</text><text x="438" y="148" fill="#30363d">..........................</text><text x="665" y="148" fill="#79c0ff">IoT Software Designer</text>
-    <text x="390" y="164" fill="#f0a45d">IDE</text><text x="414" y="164" fill="#30363d">.............................</text><text x="665" y="164" fill="#79c0ff">Figma, VS Code, Blender</text>
+    <text x="390" y="100" fill="#f0a45d">OS</text><text x="406" y="100" fill="#30363d">............................</text><text x="665" y="100" fill="#79c0ff">Web, Mobile, IoT, Linux</text>
+    <text x="390" y="115" fill="#f0a45d">Uptime</text><text x="438" y="115" fill="#30363d">........................</text><text x="665" y="115" fill="#79c0ff">22+ years</text>
+    <text x="390" y="130" fill="#f0a45d">Host</text><text x="422" y="130" fill="#30363d">..........................</text><text x="665" y="130" fill="#79c0ff">UI/UX Designer, Frontend</text>
+    <text x="390" y="145" fill="#f0a45d">Kernel</text><text x="438" y="145" fill="#30363d">........................</text><text x="665" y="145" fill="#79c0ff">IoT Software Designer</text>
+    <text x="390" y="160" fill="#f0a45d">IDE</text><text x="414" y="160" fill="#30363d">...........................</text><text x="665" y="160" fill="#79c0ff">Figma, VS Code, Blender</text>
 
-    <text x="390" y="192" fill="#f0a45d">Languages.Programming</text><text x="558" y="192" fill="#30363d">............</text><text x="665" y="192" fill="#c9d1d9">JavaScript, TypeScript</text>
-    <text x="390" y="208" fill="#f0a45d">Languages.Computer</text><text x="534" y="208" fill="#30363d">...............</text><text x="665" y="208" fill="#c9d1d9">HTML, CSS, React, Node.js</text>
-    <text x="390" y="224" fill="#f0a45d">Languages.Real</text><text x="510" y="224" fill="#30363d">..................</text><text x="665" y="224" fill="#c9d1d9">English, Hindi, Urdu</text>
+    <text x="390" y="187" fill="#f0a45d">Languages.Programming</text><text x="558" y="187" fill="#30363d">..........</text><text x="665" y="187" fill="#c9d1d9">JavaScript, TypeScript</text>
+    <text x="390" y="202" fill="#f0a45d">Languages.Computer</text><text x="534" y="202" fill="#30363d">.............</text><text x="665" y="202" fill="#c9d1d9">HTML, CSS, React, Node.js</text>
+    <text x="390" y="217" fill="#f0a45d">Languages.Real</text><text x="510" y="217" fill="#30363d">................</text><text x="665" y="217" fill="#c9d1d9">English, Hindi, Urdu</text>
 
-    <text x="390" y="252" fill="#f0a45d">Hobbies.Software</text><text x="526" y="252" fill="#30363d">.................</text><text x="665" y="252" fill="#c9d1d9">Dashboards, Design Systems</text>
-    <text x="390" y="268" fill="#f0a45d">Hobbies.Hardware</text><text x="526" y="268" fill="#30363d">.................</text><text x="665" y="268" fill="#c9d1d9">GPS, Fleet, IoT Devices</text>
+    <text x="390" y="244" fill="#f0a45d">Hobbies.Software</text><text x="526" y="244" fill="#30363d">...............</text><text x="665" y="244" fill="#c9d1d9">Dashboards, Design Systems</text>
+    <text x="390" y="259" fill="#f0a45d">Hobbies.Hardware</text><text x="526" y="259" fill="#30363d">...............</text><text x="665" y="259" fill="#c9d1d9">GPS, Fleet, IoT Devices</text>
 
-    <text x="390" y="306" fill="#c9d1d9" font-weight="700">Contact</text>
-    <text x="390" y="324" fill="#f0a45d">Email.Personal</text><text x="510" y="324" fill="#30363d">..................</text><text x="665" y="324" fill="#79c0ff">shaarifalam@gmail.com</text>
-    <text x="390" y="340" fill="#f0a45d">GitHub</text><text x="438" y="340" fill="#30363d">..........................</text><text x="665" y="340" fill="#79c0ff">github.com/shaarifalam</text>
-    <text x="390" y="356" fill="#f0a45d">LinkedIn</text><text x="454" y="356" fill="#30363d">........................</text><text x="665" y="356" fill="#79c0ff">linkedin.com/in/shaarifalam</text>
+    <text x="390" y="294" fill="#c9d1d9" font-weight="700">Contact</text>
+    <text x="390" y="312" fill="#f0a45d">Email.Personal</text><text x="510" y="312" fill="#30363d">................</text><text x="665" y="312" fill="#79c0ff">shaarifalam@gmail.com</text>
+    <text x="390" y="327" fill="#f0a45d">Email.Personal</text><text x="510" y="327" fill="#30363d">................</text><text x="665" y="327" fill="#79c0ff">github.com/shaarifalam</text>
+    <text x="390" y="342" fill="#f0a45d">Email.Work</text><text x="470" y="342" fill="#30363d">.....................</text><text x="665" y="342" fill="#79c0ff">available on request</text>
+    <text x="390" y="357" fill="#f0a45d">LinkedIn</text><text x="454" y="357" fill="#30363d">......................</text><text x="665" y="357" fill="#79c0ff">linkedin.com/in/shaarifalam</text>
+    <text x="390" y="372" fill="#f0a45d">Discord</text><text x="446" y="372" fill="#30363d">.......................</text><text x="665" y="372" fill="#79c0ff">shaarifalam</text>
 
     <text x="390" y="410" fill="#c9d1d9" font-weight="700">GitHub Stats</text>
     <text x="500" y="410" fill="#30363d">------------------------------</text>
     <g font-size="12">
       <text x="390" y="436" fill="#f0a45d">Repos:</text><text x="438" y="436" fill="#7ee787">update-stats</text>
-      <text x="532" y="436" fill="#f0a45d">Contributions:</text><text x="628" y="436" fill="#7ee787">Waiting</text>
-      <text x="700" y="436" fill="#f0a45d">Stars:</text><text x="748" y="436" fill="#79c0ff">Waiting</text>
-      <text x="810" y="436" fill="#f0a45d">Followers:</text><text x="888" y="436" fill="#ff7b72">Waiting</text>
+      <text x="532" y="436" fill="#f0a45d">Stars:</text><text x="580" y="436" fill="#79c0ff">Waiting</text>
+      <text x="646" y="436" fill="#f0a45d">Commits:</text><text x="706" y="436" fill="#c9d1d9">Waiting</text>
+      <text x="782" y="436" fill="#f0a45d">Followers:</text><text x="860" y="436" fill="#ff7b72">Waiting</text>
+      <text x="390" y="456" fill="#f0a45d">Lines of Code on GitHub:</text><text x="572" y="456" fill="#7ee787">Waiting</text>
     </g>
   </g>
 </svg>

@@ -90,7 +90,7 @@
     <text class="label" x="430" y="312">Current.Mission</text><line class="leader" x1="552" y1="308" x2="641" y2="308" /><text text-anchor="end" class="value green" x="908" y="312">Building intelligent IoT experiences</text>
 
     <text class="title" x="430" y="330">Contact</text>
-    <text class="label" x="430" y="344">Email.Personal</text><line class="leader" x1="552" y1="340" x2="749" y2="340" /><text text-anchor="end" class="value blue" x="908" y="344">alanshaarif@gmail.com</text>
+    <text class="label" x="430" y="344">Email.Personal</text><line class="leader" x1="552" y1="340" x2="749" y2="340" /><text text-anchor="end" class="value blue" x="908" y="344">alamshaarif@gmail.com</text>
     <text class="label" x="430" y="358">Phone</text><line class="leader" x1="552" y1="354" x2="778" y2="354" /><text text-anchor="end" class="value blue" x="908" y="358">+1 (608) 806-8794</text>
     <text class="label" x="430" y="372">LinkedIn</text><line class="leader" x1="552" y1="368" x2="706" y2="368" /><text text-anchor="end" class="value blue" x="908" y="372">linkedin.com/in/shaarifalam</text>
     <text class="label" x="430" y="386">Website</text><line class="leader" x1="552" y1="382" x2="742" y2="382" /><text text-anchor="end" class="value blue" x="908" y="386">shaarifalam.vercel.app</text>

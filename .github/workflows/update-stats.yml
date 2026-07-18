@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install SVG renderer
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
+
       - name: Update GitHub stats
         run: npm run update-stats
         env:
@@ -30,8 +33,11 @@ jobs:
           UPTIME_START: '2001-07-03T00:00:00Z'
           PROFILE_TIME_ZONE: 'Asia/Kolkata'
 
+      - name: Render PNG profile card
+        run: rsvg-convert README-assets/profile-card.svg -w 960 -h 540 -o README-assets/profile-card.png
+
       - name: Commit updated stats
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'chore: update profile stats'
-          file_pattern: README.md README-assets/profile-card.svg
+          file_pattern: README.md README-assets/profile-card.svg README-assets/profile-card.png

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Shaarif Alam README terminal profile</title>
+  <desc id="desc">Terminal style profile card with ASCII portrait and aligned profile details.</desc>
+  <style>
+    .page { fill: #0d1117; }
+    .card { fill: #111820; stroke: #263341; stroke-width: 1; }
+    .muted { fill: #8b949e; }
+    .ascii { fill: #c8cdd6; font: 11px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .title { fill: #e6edf3; font: 700 12px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .label { fill: #ffb04f; font: 700 12px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .value { font: 700 12px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; text-anchor: end; }
+    .blue { fill: #66b3f7; }
+    .gray { fill: #c8cdd6; }
+    .green { fill: #7ee787; }
+    .rule { stroke: #8b949e; stroke-width: 1; stroke-dasharray: 3 3; }
+    .leader { stroke: #303b46; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 1 7; }
+  </style>
+
+  <rect class="page" width="960" height="540" />
+  <text class="muted" x="18" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="12">shaarifalam / README.md</text>
+  <rect class="card" x="18" y="47" width="924" height="465" rx="6" />
+
+  <text class="ascii" x="42" y="79" xml:space="preserve">
+    <tspan x="42" dy="0">###################################################%#**</tspan>
+    <tspan x="42" dy="13">###################################################%#**</tspan>
+    <tspan x="42" dy="13">######################*******######################%#**</tspan>
+    <tspan x="42" dy="13">###################*=::::::...:-+##############%%#%%#**</tspan>
+    <tspan x="42" dy="13">################*+=::.      .  .:::+############%%%%%#**</tspan>
+    <tspan x="42" dy="13">###############*=:.......  ........+###########%%%%%#**</tspan>
+    <tspan x="42" dy="13">##############**:::.  . .          .*#########%%%%%%#**</tspan>
+    <tspan x="42" dy="13">###############*-:.  .  ..  ..      +#########%%%%%%#**</tspan>
+    <tspan x="42" dy="13">###############*-::..--:...:.      .*#########%%%%%##**</tspan>
+    <tspan x="42" dy="13">################*-==:::-=-....:.   .##########%%%%%##**</tspan>
+    <tspan x="42" dy="13">#################+=+=--=+-.:-..::. =##########%%%%%##**</tspan>
+    <tspan x="42" dy="13">#################*+******+==+++=-::-*#########%%%####**</tspan>
+    <tspan x="42" dy="13">#################*+****+==:-=++=:.:-*#########%######**</tspan>
+    <tspan x="42" dy="13">##################==*+====--::-:..+*##############%##**</tspan>
+    <tspan x="42" dy="13">##################*-=+**+=----.  -###################**</tspan>
+    <tspan x="42" dy="13">###################*:=**=::--:   =##################***</tspan>
+    <tspan x="42" dy="13">#####################+:.      .::.  *###############***</tspan>
+    <tspan x="42" dy="13">#####################:++=::::---.    .*#############***</tspan>
+    <tspan x="42" dy="13">####################+.=++++===:          .-*########***</tspan>
+    <tspan x="42" dy="13">***#############*=:::  :+++=.               ..:=####***</tspan>
+    <tspan x="42" dy="13">************+-::::.                              .+#***</tspan>
+    <tspan x="42" dy="13">**********-:.:::::...............  ..  .. ...      :***</tspan>
+    <tspan x="42" dy="13">*********::..:::::.....................   ...       +**</tspan>
+    <tspan x="42" dy="13">********:....:::::.....................  ...         +*</tspan>
+    <tspan x="42" dy="13">*******+.....:::......................   ..          :*</tspan>
+    <tspan x="42" dy="13">*******:.  ..:.:......................... ..         . +</tspan>
+    <tspan x="42" dy="13">*******:.  .................................         . -</tspan>
+  </text>
+
+  <text class="title" x="430" y="78">shaarif@alam</text>
+  <line class="rule" x1="544" y1="74" x2="862" y2="74" />
+
+  <g>
+    <text class="label" x="430" y="102">OS</text><line class="leader" x1="552" y1="98" x2="698" y2="98" /><text class="value blue" x="908" y="102">Web, Mobile, Embedded, Linux</text>
+    <text class="label" x="430" y="116">Uptime</text><line class="leader" x1="552" y1="112" x2="734" y2="112" /><text class="value blue" x="908" y="116">25y 0mo 14d 21h 36m 26s</text>
+    <text class="label" x="430" y="130">Host</text><line class="leader" x1="552" y1="126" x2="727" y2="126" /><text class="value blue" x="908" y="130">UI/UX Designer, Frontend</text>
+    <text class="label" x="430" y="144">Kernel</text><line class="leader" x1="552" y1="140" x2="749" y2="140" /><text class="value blue" x="908" y="144">IoT Software Designer</text>
+    <text class="label" x="430" y="158">IDE</text><line class="leader" x1="552" y1="154" x2="799" y2="154" /><text class="value blue" x="908" y="158">Figma, VS Code</text>
+
+    <text class="label" x="430" y="186">Embedded.Systems</text><line class="leader" x1="552" y1="182" x2="641" y2="182" /><text class="value gray" x="908" y="186">GPS • GSM • BLE • RFID • IoT Sensors</text>
+    <text class="label" x="430" y="200">Mechanical.CAD</text><line class="leader" x1="552" y1="196" x2="756" y2="196" /><text class="value gray" x="908" y="200">SolidWorks • Blender</text>
+    <text class="label" x="430" y="214">Frontend.Stack</text><line class="leader" x1="552" y1="210" x2="662" y2="210" /><text class="value gray" x="908" y="214">React • TypeScript • Tailwind CSS</text>
+    <text class="label" x="430" y="228">Design.Systems</text><line class="leader" x1="552" y1="224" x2="648" y2="224" /><text class="value gray" x="908" y="228">Figma • UI/UX • Component Libraries</text>
+    <text class="label" x="430" y="242">Mapping.Tech</text><line class="leader" x1="552" y1="238" x2="713" y2="238" /><text class="value gray" x="908" y="242">Google Maps • Mapbox • GIS</text>
+    <text class="label" x="430" y="256">Cloud.Services</text><line class="leader" x1="552" y1="252" x2="713" y2="252" /><text class="value gray" x="908" y="256">GitHub • Vercel • Firebase</text>
+    <text class="label" x="430" y="270">Data.Storage</text><line class="leader" x1="552" y1="266" x2="691" y2="266" /><text class="value gray" x="908" y="270">MySQL • PostgreSQL • Firebase</text>
+    <text class="label" x="430" y="284">Protocols</text><line class="leader" x1="552" y1="280" x2="706" y2="280" /><text class="value gray" x="908" y="284">MQTT • REST API • WebSocket</text>
+    <text class="label" x="430" y="298">Industry.Focus</text><line class="leader" x1="552" y1="294" x2="569" y2="294" /><text class="value gray" x="908" y="298">Fleet Management • Telematics • Asset Tracking</text>
+    <text class="label" x="430" y="312">Current.Mission</text><line class="leader" x1="552" y1="308" x2="641" y2="308" /><text class="value green" x="908" y="312">Building intelligent IoT experiences</text>
+
+    <text class="title" x="430" y="330">Contact</text>
+    <text class="label" x="430" y="344">Email.Personal</text><line class="leader" x1="552" y1="340" x2="749" y2="340" /><text class="value blue" x="908" y="344">alanshaarif@gmail.com</text>
+    <text class="label" x="430" y="358">Phone</text><line class="leader" x1="552" y1="354" x2="778" y2="354" /><text class="value blue" x="908" y="358">+1 (608) 806-8794</text>
+    <text class="label" x="430" y="372">LinkedIn</text><line class="leader" x1="552" y1="368" x2="706" y2="368" /><text class="value blue" x="908" y="372">linkedin.com/in/shaarifalam</text>
+    <text class="label" x="430" y="386">Website</text><line class="leader" x1="552" y1="382" x2="742" y2="382" /><text class="value blue" x="908" y="386">shaarifalam.vercel.app</text>
+
+    <text class="title" x="430" y="406">GitHub Stats</text>
+    <text class="label" x="430" y="424">Repos</text><line class="leader" x1="552" y1="420" x2="886" y2="420" /><text class="value green" x="908" y="424">10</text>
+    <text class="label" x="430" y="438">Stars</text><line class="leader" x1="552" y1="434" x2="893" y2="434" /><text class="value gray" x="908" y="438">9</text>
+    <text class="label" x="430" y="452">Commits</text><line class="leader" x1="552" y1="448" x2="886" y2="448" /><text class="value blue" x="908" y="452">48</text>
+    <text class="label" x="430" y="466">Followers</text><line class="leader" x1="552" y1="462" x2="886" y2="462" /><text class="value gray" x="908" y="466">17</text>
+    <text class="label" x="430" y="480">Contributions</text><line class="leader" x1="552" y1="476" x2="886" y2="476" /><text class="value blue" x="908" y="480">60</text>
+    <text class="label" x="430" y="494">Updated</text><line class="leader" x1="552" y1="490" x2="749" y2="490" /><text class="value green" x="908" y="494">Jul 17, 2026, 9:36 PM</text>
+  </g>
+</svg>

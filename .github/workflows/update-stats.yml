@@ -28,6 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
           UPTIME_START: '2001-07-03T00:00:00Z'
+          PROFILE_TIME_ZONE: 'Asia/Kolkata'
 
       - name: Commit updated stats
         uses: stefanzweifel/git-auto-commit-action@v5

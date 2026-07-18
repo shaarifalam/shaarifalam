@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "update-stats": "node scripts/update-stats.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

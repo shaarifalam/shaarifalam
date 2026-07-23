@@ -73,7 +73,7 @@
 
   <g>
     <text class="label" x="430" y="102">OS</text><line class="leader" x1="552" y1="98" x2="698" y2="98" /><text text-anchor="end" class="value blue" x="908" y="102">Web, Mobile, Embedded, Linux</text>
-    <text class="label" x="430" y="116">Uptime</text><line class="leader" data-leader="uptime" x1="552" y1="112" x2="732" y2="112" /><text text-anchor="end" class="value blue" data-stat="uptime" x="908" y="116">25y 0mo 19d 23h 33m 20s</text>
+    <text class="label" x="430" y="116">Uptime</text><line class="leader" data-leader="uptime" x1="552" y1="112" x2="754" y2="112" /><text text-anchor="end" class="value blue" data-stat="uptime" x="908" y="116">25y 0mo 20d 1h 7m 7s</text>
     <text class="label" x="430" y="130">Host</text><line class="leader" x1="552" y1="126" x2="727" y2="126" /><text text-anchor="end" class="value blue" x="908" y="130">UI/UX Designer, Frontend</text>
     <text class="label" x="430" y="144">Kernel</text><line class="leader" x1="552" y1="140" x2="749" y2="140" /><text text-anchor="end" class="value blue" x="908" y="144">IoT Software Designer</text>
     <text class="label" x="430" y="158">IDE</text><line class="leader" x1="552" y1="154" x2="799" y2="154" /><text text-anchor="end" class="value blue" x="908" y="158">Figma, VS Code</text>
@@ -98,9 +98,9 @@
     <text class="title" x="430" y="406">GitHub Stats</text>
     <text class="label" x="430" y="424">Repos</text><line class="leader" data-leader="repos" x1="552" y1="420" x2="884" y2="420" /><text text-anchor="end" class="value green" data-stat="repos" x="908" y="424">11</text>
     <text class="label" x="430" y="438">Stars</text><line class="leader" data-leader="stars" x1="552" y1="434" x2="891" y2="434" /><text text-anchor="end" class="value gray" data-stat="stars" x="908" y="438">9</text>
-    <text class="label" x="430" y="452">Commits</text><line class="leader" data-leader="commits" x1="552" y1="448" x2="876" y2="448" /><text text-anchor="end" class="value blue" data-stat="commits" x="908" y="452">147</text>
+    <text class="label" x="430" y="452">Commits</text><line class="leader" data-leader="commits" x1="552" y1="448" x2="876" y2="448" /><text text-anchor="end" class="value blue" data-stat="commits" x="908" y="452">148</text>
     <text class="label" x="430" y="466">Followers</text><line class="leader" data-leader="followers" x1="552" y1="462" x2="884" y2="462" /><text text-anchor="end" class="value gray" data-stat="followers" x="908" y="466">18</text>
-    <text class="label" x="430" y="480">Contributions</text><line class="leader" data-leader="contributions" x1="552" y1="476" x2="876" y2="476" /><text text-anchor="end" class="value blue" data-stat="contributions" x="908" y="480">109</text>
-    <text class="label" x="430" y="494">Updated</text><line class="leader" data-leader="updated" x1="552" y1="490" x2="747" y2="490" /><text text-anchor="end" class="value green" data-stat="updated" x="908" y="494">Jul 23, 2026, 5:03 AM</text>
+    <text class="label" x="430" y="480">Contributions</text><line class="leader" data-leader="contributions" x1="552" y1="476" x2="876" y2="476" /><text text-anchor="end" class="value blue" data-stat="contributions" x="908" y="480">110</text>
+    <text class="label" x="430" y="494">Updated</text><line class="leader" data-leader="updated" x1="552" y1="490" x2="747" y2="490" /><text text-anchor="end" class="value green" data-stat="updated" x="908" y="494">Jul 23, 2026, 6:37 AM</text>
   </g>
 </svg>
